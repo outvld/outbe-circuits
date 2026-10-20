@@ -8,3 +8,6 @@ params
 # cargo-ndk output directory used by Android mobile builds.
 # Per-ABI subdirs hold liboutbe_zk_circuit_noir.so artifacts.
 jniLibs
+
+# Browser-only dependencies for the isolated ownership R&D demo.
+/experiments/ownership-rd/node_modules/

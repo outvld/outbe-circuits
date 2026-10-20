@@ -1,0 +1,16 @@
+{
+  "name": "ownership-rd-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:noir": "node build-noir.mjs"
+  },
+  "dependencies": {
+    "@aztec/bb.js": "5.0.0-nightly.20260522",
+    "@noir-lang/noir_js": "1.0.0-beta.22",
+    "pako": "2.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

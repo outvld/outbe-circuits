@@ -1,0 +1,4052 @@
+{
+  "format": 1,
+  "exported_at": "2026-10-19T13:46:00.300Z",
+  "runs": [
+    {
+      "id": "run-1",
+      "started_at": "2026-10-19T13:34:33.761Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:34:33.761Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "groth16",
+        "scheme": "canonical",
+        "capacity": 1,
+        "mode": "cold",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "pk": {
+            "bytes": 7339376,
+            "path": "assets/keys/groth16/canonical/n1/pk.bin",
+            "sha256": "a257ff0bc34df81f4dabb2fd041cd914562f5eb9908db3f2068b5c3d4a628bf3"
+          },
+          "vk": {
+            "bytes": 360,
+            "path": "assets/keys/groth16/canonical/n1/vk.bin",
+            "sha256": "f7b888135def60076d5c21c63a66ce0d5d498ec1f7eba64b4ca417b277acac01"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:34:40.505Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "canonical",
+            "sizes": {
+              "pk_bytes": 7339376,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 6606300000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 800000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4600000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1700000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 6200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 10000000,
+              "bytes": 7339376
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 106000000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 1400000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 100000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 6612100000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6744200000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 25755648,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        },
+        {
+          "first_sample": 2,
+          "captured_at": "2026-10-19T13:34:48.689Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "canonical",
+            "sizes": {
+              "pk_bytes": 7339376,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 6635900000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 800000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4600000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1500000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5300000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 9500000,
+              "bytes": 7339376
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 104300000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 1500000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 100000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 6641900000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6767800000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 25755648,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:34:41.921Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 1,
+            "scheme": "canonical",
+            "sizes": {
+              "assignment_bytes": 1048384,
+              "assignment_fields": 32762,
+              "constraints": 34033,
+              "instance_variables": 4,
+              "pk_bytes": 7339376,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 32758
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2800000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 67000000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 1340000000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 0,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1900000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b44118dab6772cb83abcfae9211451694ab940b47f2c69f63c2a3d28aeee2fc4"
+          },
+          "memory_before_bytes": 25755648,
+          "memory_after_bytes": 72744960,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 1414900000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:34:50.080Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 2,
+            "scheme": "canonical",
+            "sizes": {
+              "assignment_bytes": 1048384,
+              "assignment_fields": 32762,
+              "constraints": 34033,
+              "instance_variables": 4,
+              "pk_bytes": 7339376,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 32758
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 2900000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 65900000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 1316200000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 100000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 200000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1900000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b3ca40bac2c4f1569a3c6368239126731a70e9724d9681a53866e0135d5310fa"
+          },
+          "memory_before_bytes": 25755648,
+          "memory_after_bytes": 72744960,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 1390700000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:34:50.080Z"
+    },
+    {
+      "id": "run-2",
+      "started_at": "2026-10-19T13:34:50.109Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:34:50.109Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "groth16",
+        "scheme": "canonical",
+        "capacity": 1,
+        "mode": "warm",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "pk": {
+            "bytes": 7339376,
+            "path": "assets/keys/groth16/canonical/n1/pk.bin",
+            "sha256": "a257ff0bc34df81f4dabb2fd041cd914562f5eb9908db3f2068b5c3d4a628bf3"
+          },
+          "vk": {
+            "bytes": 360,
+            "path": "assets/keys/groth16/canonical/n1/vk.bin",
+            "sha256": "f7b888135def60076d5c21c63a66ce0d5d498ec1f7eba64b4ca417b277acac01"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:34:56.837Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "canonical",
+            "sizes": {
+              "pk_bytes": 7339376,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 6593400000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 900000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4300000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5400000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 8900000,
+              "bytes": 7339376
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 103900000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 500000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 0
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 6599100000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6728100000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 25755648,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:34:58.230Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 1,
+            "scheme": "canonical",
+            "sizes": {
+              "assignment_bytes": 1048384,
+              "assignment_fields": 32762,
+              "constraints": 34033,
+              "instance_variables": 4,
+              "pk_bytes": 7339376,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 32758
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2700000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 65200000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 1318100000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 0,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 2100000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b44118dab6772cb83abcfae9211451694ab940b47f2c69f63c2a3d28aeee2fc4"
+          },
+          "memory_before_bytes": 25755648,
+          "memory_after_bytes": 72744960,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 1391800000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:34:59.573Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 2,
+            "scheme": "canonical",
+            "sizes": {
+              "assignment_bytes": 1048384,
+              "assignment_fields": 32762,
+              "constraints": 34033,
+              "instance_variables": 4,
+              "pk_bytes": 7339376,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 32758
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 1000000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 45200000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 1293400000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 0,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 200000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1900000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b3ca40bac2c4f1569a3c6368239126731a70e9724d9681a53866e0135d5310fa"
+          },
+          "memory_before_bytes": 72744960,
+          "memory_after_bytes": 72744960,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 1342800000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:34:59.573Z"
+    },
+    {
+      "id": "run-3",
+      "started_at": "2026-10-19T13:35:05.876Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:35:05.876Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "groth16",
+        "scheme": "poseidon2",
+        "capacity": 1,
+        "mode": "cold",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "pk": {
+            "bytes": 1773072,
+            "path": "assets/keys/groth16/poseidon2/n1/pk.bin",
+            "sha256": "70b9cbb1d2b0242d8e50678d29059f04c18022318e4d89da27bea7bc70f7ba1e"
+          },
+          "vk": {
+            "bytes": 360,
+            "path": "assets/keys/groth16/poseidon2/n1/vk.bin",
+            "sha256": "2e9da9f94f3e2c15f9498cc1f3ce79393740cbd0990cdb85cbfc0e0762e8287a"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:35:07.768Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "poseidon2",
+            "sizes": {
+              "pk_bytes": 1773072,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 1839400000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 900000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4300000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1400000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5800000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 3600000,
+              "bytes": 1773072
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 27200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 1300000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 0
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 1845000000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 1892000000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 7602176,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        },
+        {
+          "first_sample": 2,
+          "captured_at": "2026-10-19T13:35:10.306Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "poseidon2",
+            "sizes": {
+              "pk_bytes": 1773072,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 1838600000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 800000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4400000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 4500000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 1700000,
+              "bytes": 1773072
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 25000000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 400000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 0
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 1844200000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 1879900000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 7602176,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:35:08.426Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "assignment_bytes": 249696,
+              "assignment_fields": 7803,
+              "constraints": 8289,
+              "instance_variables": 4,
+              "pk_bytes": 1773072,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 7799
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2500000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 44800000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 604700000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 100000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 2000000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b3666af4439be6e24ecbbeb2517bd196bc53acf793e8164d9622ddb67146981a"
+          },
+          "memory_before_bytes": 7602176,
+          "memory_after_bytes": 34471936,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 656800000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:35:10.960Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 2,
+            "scheme": "poseidon2",
+            "sizes": {
+              "assignment_bytes": 249696,
+              "assignment_fields": 7803,
+              "constraints": 8289,
+              "instance_variables": 4,
+              "pk_bytes": 1773072,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 7799
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 2300000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 44500000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 602000000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 100000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 2000000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "209133c51ec71727b2a1bd1b2ff50d038fa9d60b29b6f72b5ce78800a62223ad"
+          },
+          "memory_before_bytes": 7602176,
+          "memory_after_bytes": 34471936,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 653400000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:35:10.960Z"
+    },
+    {
+      "id": "run-4",
+      "started_at": "2026-10-19T13:35:10.993Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:35:10.993Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "groth16",
+        "scheme": "poseidon2",
+        "capacity": 1,
+        "mode": "warm",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "pk": {
+            "bytes": 1773072,
+            "path": "assets/keys/groth16/poseidon2/n1/pk.bin",
+            "sha256": "70b9cbb1d2b0242d8e50678d29059f04c18022318e4d89da27bea7bc70f7ba1e"
+          },
+          "vk": {
+            "bytes": 360,
+            "path": "assets/keys/groth16/poseidon2/n1/vk.bin",
+            "sha256": "2e9da9f94f3e2c15f9498cc1f3ce79393740cbd0990cdb85cbfc0e0762e8287a"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:35:12.877Z",
+          "load_report": {
+            "capacity": 1,
+            "engine": "groth16",
+            "scheme": "poseidon2",
+            "sizes": {
+              "pk_bytes": 1773072,
+              "vk_bytes": 360
+            },
+            "timings": [
+              {
+                "elapsed_ns": 1836300000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 800000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4300000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 800000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 4600000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 1900000,
+              "bytes": 1773072
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 25600000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 500000,
+              "bytes": 360
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 0
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 1841900000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 1883800000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 7602176,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:35:13.532Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "assignment_bytes": 249696,
+              "assignment_fields": 7803,
+              "constraints": 8289,
+              "instance_variables": 4,
+              "pk_bytes": 1773072,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 7799
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2300000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 45000000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 602700000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 0,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1900000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "b3666af4439be6e24ecbbeb2517bd196bc53acf793e8164d9622ddb67146981a"
+          },
+          "memory_before_bytes": 7602176,
+          "memory_after_bytes": 34471936,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 654500000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:35:14.149Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "groth16",
+            "sample": 2,
+            "scheme": "poseidon2",
+            "sizes": {
+              "assignment_bytes": 249696,
+              "assignment_fields": 7803,
+              "constraints": 8289,
+              "instance_variables": 4,
+              "pk_bytes": 1773072,
+              "proof_bytes": 128,
+              "public_bytes": 96,
+              "vk_bytes": 360,
+              "witness_variables": 7799
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 700000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 28700000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 584600000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 0,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1900000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "209133c51ec71727b2a1bd1b2ff50d038fa9d60b29b6f72b5ce78800a62223ad"
+          },
+          "memory_before_bytes": 34471936,
+          "memory_after_bytes": 34471936,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 617000000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:35:14.149Z"
+    },
+    {
+      "id": "run-5",
+      "started_at": "2026-10-19T13:35:14.176Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:35:14.176Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "nova",
+        "scheme": "poseidon2",
+        "capacity": 1,
+        "mode": "warm",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "params": {
+            "bytes": 50157355,
+            "path": "assets/keys/nova/poseidon2/params.bin",
+            "sha256": "7992ee367b6e09bdeb5b4502f756714ae6916b16bf5d2ccd86ec81483c6a7128"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:35:18.695Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "poseidon2",
+            "sizes": {
+              "params_bytes": 50157355
+            },
+            "timings": [
+              {
+                "elapsed_ns": 3780600000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 24300000,
+              "bytes": 50157355
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 697900000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 3781900000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 4519600000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 138280960,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:36:06.080Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 50157355,
+              "primary_constraints_per_step": 19336,
+              "primary_variables_per_step": 18844,
+              "proof_bytes": 10219,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                28,
+                93,
+                125,
+                11,
+                169,
+                247,
+                47,
+                98,
+                188,
+                37,
+                228,
+                130,
+                41,
+                208,
+                142,
+                231,
+                34,
+                32,
+                220,
+                77,
+                187,
+                111,
+                139,
+                97,
+                27,
+                206,
+                232,
+                66,
+                4,
+                81,
+                178,
+                69
+              ]
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2200000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 586500000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 383800000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 45407800000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3200000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 996500000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b3666af4439be6e24ecbbeb2517bd196bc53acf793e8164d9622ddb67146981a"
+          },
+          "memory_before_bytes": 138280960,
+          "memory_after_bytes": 173408256,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 47381800000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:36:53.102Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 2,
+            "scheme": "poseidon2",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 50157355,
+              "primary_constraints_per_step": 19336,
+              "primary_variables_per_step": 18844,
+              "proof_bytes": 10219,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                48,
+                64,
+                205,
+                60,
+                55,
+                89,
+                233,
+                163,
+                202,
+                185,
+                141,
+                102,
+                229,
+                148,
+                103,
+                251,
+                105,
+                2,
+                218,
+                243,
+                105,
+                229,
+                20,
+                214,
+                108,
+                64,
+                103,
+                77,
+                241,
+                177,
+                83,
+                37
+              ]
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 700000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 421000000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 395500000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 45351700000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 200000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3000000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 848500000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "209133c51ec71727b2a1bd1b2ff50d038fa9d60b29b6f72b5ce78800a62223ad"
+          },
+          "memory_before_bytes": 173408256,
+          "memory_after_bytes": 173408256,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 47020700000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:36:53.102Z"
+    },
+    {
+      "id": "run-6",
+      "started_at": "2026-10-19T13:37:00.201Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:37:00.201Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "nova",
+        "scheme": "poseidon2",
+        "capacity": 1,
+        "mode": "cold",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "params": {
+            "bytes": 50157355,
+            "path": "assets/keys/nova/poseidon2/params.bin",
+            "sha256": "7992ee367b6e09bdeb5b4502f756714ae6916b16bf5d2ccd86ec81483c6a7128"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:37:04.691Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "poseidon2",
+            "sizes": {
+              "params_bytes": 50157355
+            },
+            "timings": [
+              {
+                "elapsed_ns": 3754000000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 23800000,
+              "bytes": 50157355
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 695400000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 3755500000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 4489800000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 138280960,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        },
+        {
+          "first_sample": 2,
+          "captured_at": "2026-10-19T13:37:56.121Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "poseidon2",
+            "sizes": {
+              "params_bytes": 50157355
+            },
+            "timings": [
+              {
+                "elapsed_ns": 3760300000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1400000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 4900000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 22000000,
+              "bytes": 50157355
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 693000000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 3761500000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 4487000000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 138280960,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:37:51.634Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 50157355,
+              "primary_constraints_per_step": 19336,
+              "primary_variables_per_step": 18844,
+              "proof_bytes": 10219,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                28,
+                93,
+                125,
+                11,
+                169,
+                247,
+                47,
+                98,
+                188,
+                37,
+                228,
+                130,
+                41,
+                208,
+                142,
+                231,
+                34,
+                32,
+                220,
+                77,
+                187,
+                111,
+                139,
+                97,
+                27,
+                206,
+                232,
+                66,
+                4,
+                81,
+                178,
+                69
+              ]
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2300000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 584800000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 382000000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 44982400000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3100000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 985400000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b3666af4439be6e24ecbbeb2517bd196bc53acf793e8164d9622ddb67146981a"
+          },
+          "memory_before_bytes": 138280960,
+          "memory_after_bytes": 173408256,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 46941900000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:38:43.066Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 2,
+            "scheme": "poseidon2",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 50157355,
+              "primary_constraints_per_step": 19336,
+              "primary_variables_per_step": 18844,
+              "proof_bytes": 10219,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                48,
+                64,
+                205,
+                60,
+                55,
+                89,
+                233,
+                163,
+                202,
+                185,
+                141,
+                102,
+                229,
+                148,
+                103,
+                251,
+                105,
+                2,
+                218,
+                243,
+                105,
+                229,
+                20,
+                214,
+                108,
+                64,
+                103,
+                77,
+                241,
+                177,
+                83,
+                37
+              ]
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 2200000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 579900000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 381900000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 44992200000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3000000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 983600000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "209133c51ec71727b2a1bd1b2ff50d038fa9d60b29b6f72b5ce78800a62223ad"
+          },
+          "memory_before_bytes": 138280960,
+          "memory_after_bytes": 173408256,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 46944800000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:38:43.067Z"
+    },
+    {
+      "id": "run-7",
+      "started_at": "2026-10-19T13:38:43.093Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:38:43.093Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "nova",
+        "scheme": "canonical",
+        "capacity": 1,
+        "mode": "cold",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "params": {
+            "bytes": 60427349,
+            "path": "assets/keys/nova/canonical/params.bin",
+            "sha256": "20ed28b2defff184b0c4ae5176495999db1d1d857a3d4ba6d5b558b862b503b7"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:38:49.759Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "canonical",
+            "sizes": {
+              "params_bytes": 60427349
+            },
+            "timings": [
+              {
+                "elapsed_ns": 5784400000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1400000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5000000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 31000000,
+              "bytes": 60427349
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 834500000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 5785800000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6666000000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 159055872,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        },
+        {
+          "first_sample": 2,
+          "captured_at": "2026-10-19T13:40:13.041Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "canonical",
+            "sizes": {
+              "params_bytes": 60427349
+            },
+            "timings": [
+              {
+                "elapsed_ns": 5796200000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1500000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 25500000,
+              "bytes": 60427349
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 835300000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 5797700000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6669400000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 159055872,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:40:06.371Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 1,
+            "scheme": "canonical",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 60427349,
+              "primary_constraints_per_step": 45080,
+              "primary_variables_per_step": 43803,
+              "proof_bytes": 10510,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                28,
+                93,
+                125,
+                11,
+                169,
+                247,
+                47,
+                98,
+                188,
+                37,
+                228,
+                130,
+                41,
+                208,
+                142,
+                231,
+                34,
+                32,
+                220,
+                77,
+                187,
+                111,
+                139,
+                97,
+                27,
+                206,
+                232,
+                66,
+                4,
+                81,
+                178,
+                69
+              ]
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2700000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 704200000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 438600000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 74036500000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 400000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3100000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1425400000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b44118dab6772cb83abcfae9211451694ab940b47f2c69f63c2a3d28aeee2fc4"
+          },
+          "memory_before_bytes": 159055872,
+          "memory_after_bytes": 232718336,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 76612600000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:41:29.144Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 2,
+            "scheme": "canonical",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 60427349,
+              "primary_constraints_per_step": 45080,
+              "primary_variables_per_step": 43803,
+              "proof_bytes": 10510,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                48,
+                64,
+                205,
+                60,
+                55,
+                89,
+                233,
+                163,
+                202,
+                185,
+                141,
+                102,
+                229,
+                148,
+                103,
+                251,
+                105,
+                2,
+                218,
+                243,
+                105,
+                229,
+                20,
+                214,
+                108,
+                64,
+                103,
+                77,
+                241,
+                177,
+                83,
+                37
+              ]
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 2500000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 706000000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 438900000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 73528200000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 400000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3200000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1421500000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b3ca40bac2c4f1569a3c6368239126731a70e9724d9681a53866e0135d5310fa"
+          },
+          "memory_before_bytes": 159055872,
+          "memory_after_bytes": 232718336,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 76102500000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:41:29.144Z"
+    },
+    {
+      "id": "run-8",
+      "started_at": "2026-10-19T13:41:29.172Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:41:29.172Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "nova",
+        "scheme": "canonical",
+        "capacity": 1,
+        "mode": "warm",
+        "samples": 2
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "params": {
+            "bytes": 60427349,
+            "path": "assets/keys/nova/canonical/params.bin",
+            "sha256": "20ed28b2defff184b0c4ae5176495999db1d1d857a3d4ba6d5b558b862b503b7"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:41:35.844Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "canonical",
+            "sizes": {
+              "params_bytes": 60427349
+            },
+            "timings": [
+              {
+                "elapsed_ns": 5792400000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1500000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5300000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 28100000,
+              "bytes": 60427349
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 833600000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 5793900000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 6671400000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 159055872,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:42:51.920Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 1,
+            "scheme": "canonical",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 60427349,
+              "primary_constraints_per_step": 45080,
+              "primary_variables_per_step": 43803,
+              "proof_bytes": 10510,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                28,
+                93,
+                125,
+                11,
+                169,
+                247,
+                47,
+                98,
+                188,
+                37,
+                228,
+                130,
+                41,
+                208,
+                142,
+                231,
+                34,
+                32,
+                220,
+                77,
+                187,
+                111,
+                139,
+                97,
+                27,
+                206,
+                232,
+                66,
+                4,
+                81,
+                178,
+                69
+              ]
+            },
+            "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+            "timings": [
+              {
+                "elapsed_ns": 2900000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 701400000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 440500000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 73502700000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3200000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1423000000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b44118dab6772cb83abcfae9211451694ab940b47f2c69f63c2a3d28aeee2fc4"
+          },
+          "memory_before_bytes": 159055872,
+          "memory_after_bytes": 232718336,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 76075700000
+            }
+          ]
+        },
+        {
+          "captured_at": "2026-10-19T13:44:07.504Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 1,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 2,
+            "scheme": "canonical",
+            "sizes": {
+              "ownership_steps": 1,
+              "params_bytes": 60427349,
+              "primary_constraints_per_step": 45080,
+              "primary_variables_per_step": 43803,
+              "proof_bytes": 10510,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 1,
+              "digest_be32": [
+                48,
+                64,
+                205,
+                60,
+                55,
+                89,
+                233,
+                163,
+                202,
+                185,
+                141,
+                102,
+                229,
+                148,
+                103,
+                251,
+                105,
+                2,
+                218,
+                243,
+                105,
+                229,
+                20,
+                214,
+                108,
+                64,
+                103,
+                77,
+                241,
+                177,
+                83,
+                37
+              ]
+            },
+            "statement_digest": "d14170f6245a38b0455c2246de241a38044d1bc53d546388279c64688236acc4",
+            "timings": [
+              {
+                "elapsed_ns": 1000000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 488100000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 425700000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 73417300000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 200000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3000000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 1247300000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "b3ca40bac2c4f1569a3c6368239126731a70e9724d9681a53866e0135d5310fa"
+          },
+          "memory_before_bytes": 232718336,
+          "memory_after_bytes": 232718336,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 75583000000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:44:07.504Z"
+    },
+    {
+      "id": "run-9",
+      "started_at": "2026-10-19T13:45:02.949Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:45:02.949Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "nova",
+        "scheme": "poseidon2",
+        "capacity": 2,
+        "mode": "warm",
+        "samples": 3
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "params": {
+            "bytes": 50157355,
+            "path": "assets/keys/nova/poseidon2/params.bin",
+            "sha256": "7992ee367b6e09bdeb5b4502f756714ae6916b16bf5d2ccd86ec81483c6a7128"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:45:07.370Z",
+          "load_report": {
+            "engine": "nova",
+            "parameter_format": "bincode2 serde standard; Nova 0.76 BN254/Grumpkin PP and Spartan IPA PK/VK",
+            "scheme": "poseidon2",
+            "sizes": {
+              "params_bytes": 50157355
+            },
+            "timings": [
+              {
+                "elapsed_ns": 3684200000,
+                "stage": "params_decode"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 1600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 5800000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:params",
+              "elapsed_ns": 25300000,
+              "bytes": 50157355
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:params",
+              "elapsed_ns": 696200000
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 3685500000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 4421300000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 138280960,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:45:55.330Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 2,
+            "engine": "nova",
+            "folding_includes": "ark ownership synthesis, matrix materialization/bridge, Nova recursive proving",
+            "proof_format": "bincode2 serde standard; Nova compressed SNARK with Spartan IPA on both curves",
+            "public_encoding": "public_bytes=96 is the semantic final [count,digest,binding], already included in proof_bytes; do not add it as wire overhead. Verification additionally takes initial state and step count",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "ownership_steps": 2,
+              "params_bytes": 50157355,
+              "primary_constraints_per_step": 19336,
+              "primary_variables_per_step": 18844,
+              "proof_bytes": 10219,
+              "public_bytes": 96,
+              "secondary_constraints_per_step": 10538,
+              "secondary_variables_per_step": 10520
+            },
+            "state_commitment": {
+              "binding_be32": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "count": 2,
+              "digest_be32": [
+                36,
+                206,
+                209,
+                205,
+                215,
+                193,
+                122,
+                217,
+                34,
+                250,
+                84,
+                158,
+                228,
+                108,
+                17,
+                76,
+                72,
+                101,
+                17,
+                177,
+                189,
+                13,
+                109,
+                7,
+                192,
+                145,
+                127,
+                49,
+                230,
+                116,
+                44,
+                240
+              ]
+            },
+            "statement_digest": "37a7806732407ee0e6926b67d376b3e825376c2449d8d13d715c1a4b6a4cae14",
+            "timings": [
+              {
+                "elapsed_ns": 3100000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 1254300000,
+                "stage": "folding"
+              },
+              {
+                "elapsed_ns": 781500000,
+                "stage": "recursive_verify"
+              },
+              {
+                "elapsed_ns": 44928600000,
+                "stage": "compress"
+              },
+              {
+                "elapsed_ns": 400000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 3000000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 987400000,
+                "stage": "verify"
+              }
+            ],
+            "verification_context": "verification after folding/compression; resident decoded PP and Spartan keys",
+            "verified": true,
+            "warning": "Unaudited R&D; not Groth16 or EVM calldata; no nullifier/spent-state tracking; native and WASM share pure-Rust code",
+            "witness_digest": "2a3b8e99ff8a9cdb3ec144e821580d98fa81e237aa353aa36d5533940ebbbe99"
+          },
+          "memory_before_bytes": 138280960,
+          "memory_after_bytes": 174653440,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 47960000000
+            }
+          ]
+        }
+      ],
+      "status": "cancelled",
+      "error": {
+        "message": "Отменено пользователем",
+        "worker_stack": null,
+        "at": "2026-10-19T13:45:55.349Z",
+        "failed_sample": 2
+      },
+      "finished_at": "2026-10-19T13:45:55.349Z"
+    },
+    {
+      "id": "run-10",
+      "started_at": "2026-10-19T13:45:55.373Z",
+      "environment": {
+        "captured_at": "2026-10-19T13:45:55.373Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+        "platform": "MacIntel",
+        "user_agent_data": null,
+        "hardware_concurrency_reported": 18,
+        "device_memory_gib_reported": null,
+        "languages": [
+          "en-US"
+        ],
+        "screen": {
+          "width": 390,
+          "height": 844,
+          "device_pixel_ratio": 2
+        },
+        "secure_context": false,
+        "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+        "requested_execution_threads": 1,
+        "thread_policy": "Browser WASM single-thread; no SharedArrayBuffer or atomics required. Reported logical cores are not worker thread count.",
+        "memory_policy": "Observed WASM linear-memory capacity only, not RSS, physical RAM, total JS memory, or a peak measurement.",
+        "timezone": "Europe/Kiev",
+        "visibility_at_start": "visible"
+      },
+      "config": {
+        "engine": "groth16",
+        "scheme": "poseidon2",
+        "capacity": 2,
+        "mode": "warm",
+        "samples": 1
+      },
+      "manifest": {
+        "format": 1,
+        "warning": "R&D only: publicly known fixture keys; single-party Groth16 setup; experimental signature unaudited; Nova uses Spartan IPA, not Groth16/EVM proofs",
+        "source_sha256": {
+          "Cargo.lock": "c49a5bfde841ae01325a3379f4ba4bfdbe7bbaca4e210e2cf488712315694234",
+          "Cargo.toml": "84789c52e2ee06033004be3504e978941b24c6378c55821560efcf50f717b723",
+          "crates/outbe-protocol/Cargo.toml": "efb753d3cb13ac63ccb7954fcd86be79ce1ef3d2c42dbbb72a6d23d868c582a3",
+          "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+          "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+          "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+          "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+          "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+          "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+          "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+          "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+          "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+          "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+          "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+          "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+          "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+          "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+          "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+          "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+          "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+          "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+          "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+          "crates/outbe-zk-canonical/resources/circuits/ownership_proof/1.0.0/abi.json": "5f2cce0e9b460de10d318fcc261a7beb685aab7ff25164cab8f8597343accf8f",
+          "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+          "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+          "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+          "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+          "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+          "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+          "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+          "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+          "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+          "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+          "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+          "experiments/ownership-rd/Cargo.toml": "f05ed0e80b746d0e4500879adf153a8e96c4175a0cd4aae6d521de0662afb7f6",
+          "experiments/ownership-rd/build-web.sh": "80a06befa79b0a15a50b8d8715c20c635b59d374383fd81a178f2aa1a2f371a1",
+          "experiments/ownership-rd/src/folding.rs": "bbcf1cbf8813ca198a68c3923a648db8db508512a6862d967957abf8d362e641",
+          "experiments/ownership-rd/src/groth16.rs": "e75f394a4ab16355e8501e73978cf0025309229328fc36242bff10542dbdda82",
+          "experiments/ownership-rd/src/lib.rs": "0cd614c258a2ed95222c8488d902a7ca7668aa976d70263b883db075c6a3d85d",
+          "experiments/ownership-rd/src/main.rs": "c1b0cc7e29f20fd7a77bc76806db6543584c771f0237bda1e3be6fc981f3122e",
+          "experiments/ownership-rd/src/statement.rs": "8d8872de5268d293553c39eb3144e9891a69983126a863038aef5a4512de16e5",
+          "experiments/ownership-rd/src/wasm.rs": "2bfd3f062f37f8dda19e8f7b8289596534b526f572ac82efb35cdddb0f8ae74b",
+          "experiments/ownership-rd/web/app.js": "7e7d40e8c81c7d65f6b7560a71db57387c7ffdb0b08c736caf817e197b963193",
+          "experiments/ownership-rd/web/index.html": "df0669e7bf7ef97c736965c32ce6377e20585d98b89d381d65aa7569e7a57d3c",
+          "experiments/ownership-rd/web/styles.css": "51cc68863deded11cd5f27c603cb21a91ec8aed98f16c18b2ac936b4f5203c47",
+          "experiments/ownership-rd/web/worker.js": "bd19846cf689d940ff0e67933506365dc70ec09f9160a1e901f500a2b64e89e9"
+        },
+        "versions": {
+          "arkworks": "0.6",
+          "nova_snark": "0.76.0",
+          "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+        },
+        "assets": {
+          "pk": {
+            "bytes": 3545520,
+            "path": "assets/keys/groth16/poseidon2/n2/pk.bin",
+            "sha256": "a08f6ce82223ac79f14b55f1da354ce1ef95c3107987c31a300844b6ae0c99d0"
+          },
+          "vk": {
+            "bytes": 424,
+            "path": "assets/keys/groth16/poseidon2/n2/vk.bin",
+            "sha256": "ad72ef97cbc8e96671fc329a59d7b5c46b9f83d26db48054fd8bcecc199debed"
+          }
+        }
+      },
+      "measurement_policy": {
+        "independent_proof_per_sample": true,
+        "warmups_discarded": false,
+        "aggregation": "none",
+        "cold": "New module Worker per sample; browser HTTP and OS caches are left intact.",
+        "warm": "One module Worker and one decoded session per series; no discarded warmup.",
+        "verification": "After proving and proof encoding roundtrip in the same session, not standalone cold verification.",
+        "timers": "Rust elapsed_ns is unchanged; JavaScript module/network/hash/wall intervals are separate. session_load_wall and run_wall contain Rust stages and must not be added to them.",
+        "download": "Manifest sizes count key files only; extra JS and WASM downloads are not included. HTTP cache may avoid actual network transfer.",
+        "fixtures": "Public deterministic test keys/witnesses only; not production data."
+      },
+      "sessions": [
+        {
+          "first_sample": 1,
+          "captured_at": "2026-10-19T13:45:59.102Z",
+          "load_report": {
+            "capacity": 2,
+            "engine": "groth16",
+            "scheme": "poseidon2",
+            "sizes": {
+              "pk_bytes": 3545520,
+              "vk_bytes": 424
+            },
+            "timings": [
+              {
+                "elapsed_ns": 3693200000,
+                "stage": "pk_decode"
+              },
+              {
+                "elapsed_ns": 900000,
+                "stage": "vk_decode"
+              },
+              {
+                "elapsed_ns": 4300000,
+                "stage": "vk_prepare"
+              }
+            ]
+          },
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "module_import",
+              "elapsed_ns": 600000
+            },
+            {
+              "source": "javascript",
+              "stage": "wasm_download_init",
+              "elapsed_ns": 4500000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:pk",
+              "elapsed_ns": 6100000,
+              "bytes": 3545520
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:pk",
+              "elapsed_ns": 7200000
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_fetch:vk",
+              "elapsed_ns": 1400000,
+              "bytes": 424
+            },
+            {
+              "source": "javascript",
+              "stage": "asset_sha256:vk",
+              "elapsed_ns": 0
+            },
+            {
+              "source": "javascript",
+              "stage": "session_load_wall",
+              "elapsed_ns": 3698900000
+            },
+            {
+              "source": "javascript",
+              "stage": "worker_start_to_ready_wall",
+              "elapsed_ns": 3728900000
+            }
+          ],
+          "memory_after_init_bytes": 1245184,
+          "memory_after_load_bytes": 13631488,
+          "build_info": {
+            "execution": "single-threaded WASM in a Web Worker; arkworks parallel feature disabled; Nova uses Rayon global single-thread fallback",
+            "fixtures": "deterministic public test keys; proof blinding uses browser entropy",
+            "memory": "WASM linear-memory capacity, NOT RSS, heap-live bytes, or physical peak RAM",
+            "project": "ownership-rd",
+            "security": "R&D only; single-party Groth16 setup; experimental signature unaudited; Nova final proof is Spartan IPA, not Groth16 or an EVM verifier",
+            "target": "wasm32",
+            "timer": "web_time::Instant / browser Performance clock",
+            "version": "0.26.0"
+          },
+          "execution": {
+            "threads": 1,
+            "worker": "module",
+            "shared_array_buffer_required": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "captured_at": "2026-10-19T13:46:00.275Z",
+          "visibility_at_completion": "visible",
+          "result": {
+            "capacity": 2,
+            "engine": "groth16",
+            "sample": 1,
+            "scheme": "poseidon2",
+            "sizes": {
+              "assignment_bytes": 499328,
+              "assignment_fields": 15604,
+              "constraints": 16578,
+              "instance_variables": 6,
+              "pk_bytes": 3545520,
+              "proof_bytes": 128,
+              "public_bytes": 160,
+              "vk_bytes": 424,
+              "witness_variables": 15598
+            },
+            "statement_digest": "37a7806732407ee0e6926b67d376b3e825376c2449d8d13d715c1a4b6a4cae14",
+            "timings": [
+              {
+                "elapsed_ns": 1300000,
+                "stage": "fixture"
+              },
+              {
+                "elapsed_ns": 58700000,
+                "stage": "witness"
+              },
+              {
+                "elapsed_ns": 1107800000,
+                "stage": "prove"
+              },
+              {
+                "elapsed_ns": 100000,
+                "stage": "proof_encode"
+              },
+              {
+                "elapsed_ns": 300000,
+                "stage": "proof_decode"
+              },
+              {
+                "elapsed_ns": 2200000,
+                "stage": "verify"
+              }
+            ],
+            "verified": true,
+            "witness_digest": "2a3b8e99ff8a9cdb3ec144e821580d98fa81e237aa353aa36d5533940ebbbe99"
+          },
+          "memory_before_bytes": 13631488,
+          "memory_after_bytes": 66846720,
+          "observations": [
+            {
+              "source": "javascript",
+              "stage": "run_wall",
+              "elapsed_ns": 1172800000
+            }
+          ]
+        }
+      ],
+      "status": "completed",
+      "finished_at": "2026-10-19T13:46:00.275Z"
+    }
+  ]
+}

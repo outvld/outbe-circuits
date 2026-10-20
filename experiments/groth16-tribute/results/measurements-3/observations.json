@@ -1,0 +1,6725 @@
+[
+  {
+    "backend": "groth16",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "b5a886cb6a4458116d63fb4b64379b4d2f2bc1c32a66ed71fc5390cfa0aa6029",
+    "process": {
+      "peak_rss_bytes": 162709504,
+      "wall_ns": 1717493125
+    },
+    "proof_checks": false,
+    "public_sha256": "4787cef295abfe60d691af6eb46755f9e00d4d06e9f23087feb3d1bba748377c",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 49787,
+      "assignment_fixed_bytes": 1593184,
+      "constraints": 51026,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 5,
+      "pk_bytes": 10063376,
+      "proof_bytes": 128,
+      "public_bytes": 128,
+      "vk_bytes": 392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 49782
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7356917,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 918709,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1535144500,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 59334,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 466875,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 537916,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 58767958,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 104349292,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1750,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 106209,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 747250,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1717493125,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "b5a886cb6a4458116d63fb4b64379b4d2f2bc1c32a66ed71fc5390cfa0aa6029",
+    "process": {
+      "peak_rss_bytes": 484737024,
+      "wall_ns": 328525041
+    },
+    "proof_checks": false,
+    "public_sha256": "4787cef295abfe60d691af6eb46755f9e00d4d06e9f23087feb3d1bba748377c",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 48760,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7642250,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 45209,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7541,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 761166,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 101875,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 27458,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1555417,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 729541,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 151170791,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 154133666,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1084,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 5333,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1087750,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 328525041,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "5c5fa32353322794eeb63e82c7cd09fe405a36f92cec37ba1bcf9747e76b3bda",
+    "process": {
+      "peak_rss_bytes": 484245504,
+      "wall_ns": 338825916
+    },
+    "proof_checks": false,
+    "public_sha256": "2f6bdf7ba7a76af47cd65a11d1616db1b5bb530003577141138adf0a339b96e4",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 48760,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7478041,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 31167,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7292,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 736292,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 115708,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 20916,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1611458,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 716000,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 42,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 147953666,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 167251000,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1083,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 4459,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1242708,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 338825916,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "5c5fa32353322794eeb63e82c7cd09fe405a36f92cec37ba1bcf9747e76b3bda",
+    "process": {
+      "peak_rss_bytes": 161267712,
+      "wall_ns": 1747640875
+    },
+    "proof_checks": false,
+    "public_sha256": "2f6bdf7ba7a76af47cd65a11d1616db1b5bb530003577141138adf0a339b96e4",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 49787,
+      "assignment_fixed_bytes": 1593184,
+      "constraints": 51026,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 5,
+      "pk_bytes": 10063376,
+      "proof_bytes": 128,
+      "public_bytes": 128,
+      "vk_bytes": 392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 49782
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7974042,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1035750,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1561050417,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 90166,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 470208,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 574125,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 59402917,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 106359625,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 2459,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 109959,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 758708,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1747640875,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "8d6d2a6a04fab3a03894c56a293a4b28cdd495c9f02628b8e87ab11055c59416",
+    "process": {
+      "peak_rss_bytes": 165740544,
+      "wall_ns": 1736004042
+    },
+    "proof_checks": false,
+    "public_sha256": "12b44da100f63037a3cb09a7105dc4bd02bc8ff70a5717cf3b9d90555fb4b2ed",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 49787,
+      "assignment_fixed_bytes": 1593184,
+      "constraints": 51026,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 5,
+      "pk_bytes": 10063376,
+      "proof_bytes": 128,
+      "public_bytes": 128,
+      "vk_bytes": 392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 49782
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7652458,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 972083,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1550415750,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 58959,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 491209,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 547000,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 59761458,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 105800875,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1917,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 103959,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 758584,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1736004042,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "demo_tribute",
+    "fixture_sha256": "8d6d2a6a04fab3a03894c56a293a4b28cdd495c9f02628b8e87ab11055c59416",
+    "process": {
+      "peak_rss_bytes": 485195776,
+      "wall_ns": 330646917
+    },
+    "proof_checks": false,
+    "public_sha256": "12b44da100f63037a3cb09a7105dc4bd02bc8ff70a5717cf3b9d90555fb4b2ed",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 48760,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7642750,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 40792,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7875,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 785291,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 127458,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 30750,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1622042,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 723250,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 152893500,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 155662625,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 917,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 4542,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 1206375,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 330646917,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "93249509321e16d3603a94aca4180440e9d66f9a1574f138b0cdbdbcaf61fdb9",
+    "process": {
+      "peak_rss_bytes": 108019712,
+      "wall_ns": 1219379625
+    },
+    "proof_checks": false,
+    "public_sha256": "523e4a4d565b073d76b8482834c5ec998ed8e39ef2608554a797c7e1b3af40cf",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 32762,
+      "assignment_fixed_bytes": 1048384,
+      "constraints": 34033,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 4,
+      "pk_bytes": 7339376,
+      "proof_bytes": 128,
+      "public_bytes": 96,
+      "vk_bytes": 360,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 32758
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 364916,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 633042,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1102488167,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 67375,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 420875,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 540834,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 30172542,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 76986459,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1708,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 102333,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 693125,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1219379625,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "93249509321e16d3603a94aca4180440e9d66f9a1574f138b0cdbdbcaf61fdb9",
+    "process": {
+      "peak_rss_bytes": 478642176,
+      "wall_ns": 317645250
+    },
+    "proof_checks": false,
+    "public_sha256": "523e4a4d565b073d76b8482834c5ec998ed8e39ef2608554a797c7e1b3af40cf",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 96,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 32110,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 362875,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 23500,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 6000,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 615084,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 80875,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 14125,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1116958,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 541917,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 156003292,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 147413709,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1625,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 6083,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1131583,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 317645250,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "4e7054800dedc914c6e76ecffd163c7686d5eeb797c53720467db602ce25cc11",
+    "process": {
+      "peak_rss_bytes": 478838784,
+      "wall_ns": 323776708
+    },
+    "proof_checks": false,
+    "public_sha256": "e51cfc2dce366a33a93fcb6f9a0c151ced6d0b873f3abc14f782769854977970",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 96,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 32110,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 391083,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 30250,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 7166,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 627792,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 86875,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 20708,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1129500,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 508167,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 42,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 154395917,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 154586500,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1084,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 5916,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1125083,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 323776708,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "4e7054800dedc914c6e76ecffd163c7686d5eeb797c53720467db602ce25cc11",
+    "process": {
+      "peak_rss_bytes": 110002176,
+      "wall_ns": 1239052541
+    },
+    "proof_checks": false,
+    "public_sha256": "e51cfc2dce366a33a93fcb6f9a0c151ced6d0b873f3abc14f782769854977970",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 32762,
+      "assignment_fixed_bytes": 1048384,
+      "constraints": 34033,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 4,
+      "pk_bytes": 7339376,
+      "proof_bytes": 128,
+      "public_bytes": 96,
+      "vk_bytes": 360,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 32758
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 358000,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 721416,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1114713541,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 72083,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 423292,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 530583,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 30620125,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 83442834,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1666,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 102542,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 715125,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1239052541,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "e0e6b1bcee7c903e630967ebb1db31fe71ec8968440402ec125e01472839dfec",
+    "process": {
+      "peak_rss_bytes": 110788608,
+      "wall_ns": 1231159750
+    },
+    "proof_checks": false,
+    "public_sha256": "a7901a00390d669c4806932ecc29e2accdeeafd53ef51921b43e6e843e3ca9d2",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 32762,
+      "assignment_fixed_bytes": 1048384,
+      "constraints": 34033,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 4,
+      "pk_bytes": 7339376,
+      "proof_bytes": 128,
+      "public_bytes": 96,
+      "vk_bytes": 360,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 32758
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 389583,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 699166,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1117040125,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 75416,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 420292,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 533500,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 30452958,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 73707292,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1583,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 103916,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 715958,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1231159750,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n1",
+    "fixture_sha256": "e0e6b1bcee7c903e630967ebb1db31fe71ec8968440402ec125e01472839dfec",
+    "process": {
+      "peak_rss_bytes": 478412800,
+      "wall_ns": 312765458
+    },
+    "proof_checks": false,
+    "public_sha256": "a7901a00390d669c4806932ecc29e2accdeeafd53ef51921b43e6e843e3ca9d2",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 96,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 32110,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 405459,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 26084,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 6375,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 690458,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 81042,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 21167,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1064042,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 541917,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 150175709,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 148492875,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1042,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 4584,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 1251042,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 312765458,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "b4bb33312ab726b118a13c1913f29f98cee2a80895ea3f7245c8bb2309a2b278",
+    "process": {
+      "peak_rss_bytes": 188547072,
+      "wall_ns": 2471111583
+    },
+    "proof_checks": false,
+    "public_sha256": "1adb5989d46b4da25c66ceb72e13b7535d4882abb2538be4547bf50ea2c4dcb6",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 65522,
+      "assignment_fixed_bytes": 2096704,
+      "constraints": 68066,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 6,
+      "pk_bytes": 14678128,
+      "proof_bytes": 128,
+      "public_bytes": 160,
+      "vk_bytes": 424,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 65516
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 758917,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1450041,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2250141792,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 88667,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 517584,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 575208,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 65832958,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 140890875,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2375,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 104750,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 815125,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2471111583,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "b4bb33312ab726b118a13c1913f29f98cee2a80895ea3f7245c8bb2309a2b278",
+    "process": {
+      "peak_rss_bytes": 486178816,
+      "wall_ns": 359500916
+    },
+    "proof_checks": false,
+    "public_sha256": "1adb5989d46b4da25c66ceb72e13b7535d4882abb2538be4547bf50ea2c4dcb6",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 160,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 64115,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 758458,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 40541,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 10209,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1149792,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 142417,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 22334,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1973375,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 953791,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 159078792,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 182074250,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1041,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 6959,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1234084,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 359500916,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "c075819a1b08945e296e0b332624049b41419737e96556521a4255e7c413ae88",
+    "process": {
+      "peak_rss_bytes": 484343808,
+      "wall_ns": 348622708
+    },
+    "proof_checks": false,
+    "public_sha256": "3ce73856396af4f7a106828a18309785fa9da74aa593bf9f1aefadb104a486cd",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 160,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 64115,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 865708,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 61292,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 11958,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1174333,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 141542,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 32292,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1972792,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1006417,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 42,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 161149667,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 169139500,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1667,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 5000,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1232959,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 348622708,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "c075819a1b08945e296e0b332624049b41419737e96556521a4255e7c413ae88",
+    "process": {
+      "peak_rss_bytes": 190251008,
+      "wall_ns": 2513126584
+    },
+    "proof_checks": false,
+    "public_sha256": "3ce73856396af4f7a106828a18309785fa9da74aa593bf9f1aefadb104a486cd",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 65522,
+      "assignment_fixed_bytes": 2096704,
+      "constraints": 68066,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 6,
+      "pk_bytes": 14678128,
+      "proof_bytes": 128,
+      "public_bytes": 160,
+      "vk_bytes": 424,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 65516
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 745000,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1478208,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2312817667,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 79875,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 470625,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 560000,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 60540916,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 124721375,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2500,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 107125,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 863084,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2513126584,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "7852011ad4b923bb73965c3fe9ef80785be66895018b6748e513f822555d342d",
+    "process": {
+      "peak_rss_bytes": 193069056,
+      "wall_ns": 2481582834
+    },
+    "proof_checks": false,
+    "public_sha256": "0b469162fc2a1535ae9a48424393b0101122e5876b08cb8241d7a21d43693efc",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 65522,
+      "assignment_fixed_bytes": 2096704,
+      "constraints": 68066,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 6,
+      "pk_bytes": 14678128,
+      "proof_bytes": 128,
+      "public_bytes": 160,
+      "vk_bytes": 424,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 65516
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 734791,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1274916,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2271978375,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 81000,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 453958,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 558917,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 63422750,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 131759041,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2166,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 104125,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 841458,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2481582834,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n2",
+    "fixture_sha256": "7852011ad4b923bb73965c3fe9ef80785be66895018b6748e513f822555d342d",
+    "process": {
+      "peak_rss_bytes": 484687872,
+      "wall_ns": 324723041
+    },
+    "proof_checks": false,
+    "public_sha256": "0b469162fc2a1535ae9a48424393b0101122e5876b08cb8241d7a21d43693efc",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 160,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 64115,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 743083,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 41708,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 10041,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1120209,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 150333,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 28083,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1900375,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 956125,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 151076458,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 155093750,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1083,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 2625,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 1235583,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 324723041,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "619be3b1601fdaa8dec0145596f92ab43926f7090952556e7de5da69378a35b4",
+    "process": {
+      "peak_rss_bytes": 367460352,
+      "wall_ns": 4896624417
+    },
+    "proof_checks": false,
+    "public_sha256": "353a46db287cc54364d286fc97c363bdf19b9727389b71fb4421a63df75f1995",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 131042,
+      "assignment_fixed_bytes": 4193344,
+      "constraints": 136132,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 10,
+      "pk_bytes": 29355632,
+      "proof_bytes": 128,
+      "public_bytes": 288,
+      "vk_bytes": 552,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 131032
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1428875,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2558958,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4553627084,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 63750,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 478791,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 555792,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 117127750,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 206043292,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2750,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 105583,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1020959,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4896624417,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "619be3b1601fdaa8dec0145596f92ab43926f7090952556e7de5da69378a35b4",
+    "process": {
+      "peak_rss_bytes": 502661120,
+      "wall_ns": 348289916
+    },
+    "proof_checks": false,
+    "public_sha256": "353a46db287cc54364d286fc97c363bdf19b9727389b71fb4421a63df75f1995",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 288,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 128125,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1421583,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 35083,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 13875,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2005542,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 256250,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 20833,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 3450916,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2558708,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 154204625,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 172585500,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1208,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4916,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1146958,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 348289916,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "a5dbd45da7c0ebcbc62cfcd2316b49f4c01c936ffef0d732fbeec7d7e74d0a96",
+    "process": {
+      "peak_rss_bytes": 502710272,
+      "wall_ns": 341889625
+    },
+    "proof_checks": false,
+    "public_sha256": "34483dca09463f959565f373c3e6a6eb1765be79d83fa9228d561c99e147b698",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 288,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 128125,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1464625,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 45208,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 13959,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2004666,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 248666,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 21417,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 3300250,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2484583,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 0,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 149103833,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 170844542,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1958,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2542,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1146542,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 341889625,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "a5dbd45da7c0ebcbc62cfcd2316b49f4c01c936ffef0d732fbeec7d7e74d0a96",
+    "process": {
+      "peak_rss_bytes": 358629376,
+      "wall_ns": 4831129875
+    },
+    "proof_checks": false,
+    "public_sha256": "34483dca09463f959565f373c3e6a6eb1765be79d83fa9228d561c99e147b698",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 131042,
+      "assignment_fixed_bytes": 4193344,
+      "constraints": 136132,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 10,
+      "pk_bytes": 29355632,
+      "proof_bytes": 128,
+      "public_bytes": 288,
+      "vk_bytes": 552,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 131032
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1441541,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2560583,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4486617667,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 77458,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 449709,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 539417,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 117397792,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 208066583,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1958,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 107458,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1026125,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4831129875,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "ab6fdd751e4c2dd6129a66b704e6c716ef0330fda62fa77cecf1a9718bef0193",
+    "process": {
+      "peak_rss_bytes": 361873408,
+      "wall_ns": 4869352584
+    },
+    "proof_checks": false,
+    "public_sha256": "340b1fa42cdba66dd8ff890ee5cecc560facd71de5e1fc6101d223a4286f3b28",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 131042,
+      "assignment_fixed_bytes": 4193344,
+      "constraints": 136132,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 10,
+      "pk_bytes": 29355632,
+      "proof_bytes": 128,
+      "public_bytes": 288,
+      "vk_bytes": 552,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 131032
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1471375,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2696959,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4519423500,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 65542,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 460042,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 545500,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 115960958,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 214112417,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2125,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 105333,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1002875,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 4869352584,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n4",
+    "fixture_sha256": "ab6fdd751e4c2dd6129a66b704e6c716ef0330fda62fa77cecf1a9718bef0193",
+    "process": {
+      "peak_rss_bytes": 501891072,
+      "wall_ns": 358149083
+    },
+    "proof_checks": false,
+    "public_sha256": "340b1fa42cdba66dd8ff890ee5cecc560facd71de5e1fc6101d223a4286f3b28",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 46088,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 288,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 128125,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1423959,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 27125,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 13834,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2004666,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 250167,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 26042,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 3336083,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 2623583,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 148971333,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 187680792,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1375,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 3833,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 1189666,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 358149083,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "b96271088bd7aef48e1d433c968ae28af15b8ba3988d05162bdf8df0ed583951",
+    "process": {
+      "peak_rss_bytes": 712671232,
+      "wall_ns": 9778333792
+    },
+    "proof_checks": false,
+    "public_sha256": "67332aaa48ca9d43fe76fe87222ca8008049505450e3bcee279976f4ae582f41",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 262082,
+      "assignment_fixed_bytes": 8386624,
+      "constraints": 272264,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 18,
+      "pk_bytes": 58710640,
+      "proof_bytes": 128,
+      "public_bytes": 544,
+      "vk_bytes": 808,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 262064
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2828458,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 5190333,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9085809084,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 68041,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 485458,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 532125,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 238762583,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 420801834,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2125,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 105583,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1429625,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9778333792,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "b96271088bd7aef48e1d433c968ae28af15b8ba3988d05162bdf8df0ed583951",
+    "process": {
+      "peak_rss_bytes": 549257216,
+      "wall_ns": 411413167
+    },
+    "proof_checks": false,
+    "public_sha256": "67332aaa48ca9d43fe76fe87222ca8008049505450e3bcee279976f4ae582f41",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 55260,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 544,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 256145,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2919209,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 78833,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 31917,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 3925458,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 573709,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 47584,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6331625,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6442834,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 150858167,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 226900791,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1125,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 3084,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1126291,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 411413167,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "0d86e54d5c83514c06c92c1267b1764a854f138bd1a80f001c2c451f7c8defa2",
+    "process": {
+      "peak_rss_bytes": 549584896,
+      "wall_ns": 408517500
+    },
+    "proof_checks": false,
+    "public_sha256": "c9fd00b17851b5428017c6a25a8e8d82ef4b73193cd508ed4e970ba08310fe43",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 55260,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 544,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 256145,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2854750,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 53000,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 26833,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 3914750,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 582375,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 35083,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6133791,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6129083,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 0,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 150504042,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 224412000,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 917,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 3125,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1217042,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 408517500,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "0d86e54d5c83514c06c92c1267b1764a854f138bd1a80f001c2c451f7c8defa2",
+    "process": {
+      "peak_rss_bytes": 705298432,
+      "wall_ns": 9745194750
+    },
+    "proof_checks": false,
+    "public_sha256": "c9fd00b17851b5428017c6a25a8e8d82ef4b73193cd508ed4e970ba08310fe43",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 262082,
+      "assignment_fixed_bytes": 8386624,
+      "constraints": 272264,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 18,
+      "pk_bytes": 58710640,
+      "proof_bytes": 128,
+      "public_bytes": 544,
+      "vk_bytes": 808,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 262064
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2838041,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 5469750,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9092335500,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 71833,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 498250,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 552875,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 240230208,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 378665875,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1917,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 104958,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1417208,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9745194750,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "ea46c620ac3ea426de157f04f67c2f484799b5b4df9083f2c3ea5cf1b29fa7fc",
+    "process": {
+      "peak_rss_bytes": 697040896,
+      "wall_ns": 9828185959
+    },
+    "proof_checks": false,
+    "public_sha256": "d2a091877dd48575f3c17b42de4cace6484754feca7076110e3fbc2c56669c54",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 262082,
+      "assignment_fixed_bytes": 8386624,
+      "constraints": 272264,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 18,
+      "pk_bytes": 58710640,
+      "proof_bytes": 128,
+      "public_bytes": 544,
+      "vk_bytes": 808,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 262064
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2832208,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 5176542,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9179724208,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 73250,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 599708,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 589416,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 237761250,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 376440334,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 3208,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 107708,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1510458,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 9828185959,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n8",
+    "fixture_sha256": "ea46c620ac3ea426de157f04f67c2f484799b5b4df9083f2c3ea5cf1b29fa7fc",
+    "process": {
+      "peak_rss_bytes": 549502976,
+      "wall_ns": 424709167
+    },
+    "proof_checks": false,
+    "public_sha256": "d2a091877dd48575f3c17b42de4cace6484754feca7076110e3fbc2c56669c54",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 65536,
+      "gates": 55260,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8768,
+      "public_bytes": 544,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 256145,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2886625,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 44375,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 28125,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 4116416,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 702000,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 67125,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6946625,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 6405000,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 159020625,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 230678542,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1083,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 2833,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 1197208,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 424709167,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "85502dff1b4c44e7acbf4e820b0301e9ed2d41dc3dc84f3e0b1ec2101c52887f",
+    "process": {
+      "peak_rss_bytes": 1385496576,
+      "wall_ns": 19521013500
+    },
+    "proof_checks": false,
+    "public_sha256": "648ddf3c3ada5f2e4cb0bb9abde28c63b50e91192dd51d1bdb089d5ce55e36d8",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 524162,
+      "assignment_fixed_bytes": 16773184,
+      "constraints": 544528,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 34,
+      "pk_bytes": 117420656,
+      "proof_bytes": 128,
+      "public_bytes": 1056,
+      "vk_bytes": 1320,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 524128
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5658416,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 10225583,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 18294321042,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 81166,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 544208,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 540958,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 458716458,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 708498625,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2208,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 103500,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2210416,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 19521013500,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "85502dff1b4c44e7acbf4e820b0301e9ed2d41dc3dc84f3e0b1ec2101c52887f",
+    "process": {
+      "peak_rss_bytes": 614531072,
+      "wall_ns": 567023584
+    },
+    "proof_checks": false,
+    "public_sha256": "648ddf3c3ada5f2e4cb0bb9abde28c63b50e91192dd51d1bdb089d5ce55e36d8",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 131072,
+      "gates": 107624,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9152,
+      "public_bytes": 1056,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 512185,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5630292,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 289666,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 50875,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 7240459,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 990291,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 216292,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 11959083,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 15600584,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 152013625,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 361344791,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2000,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2375,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1105833,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 567023584,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "e70ff26adc2b65e4c27b27b2ca40a2860ce083b3e4a99d813a3f548821fcabb4",
+    "process": {
+      "peak_rss_bytes": 660537344,
+      "wall_ns": 574493334
+    },
+    "proof_checks": false,
+    "public_sha256": "f76f697ef73b17de2447aabf0a258299c51f009a196c27119baf3934ca65ad3a",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 131072,
+      "gates": 107624,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9152,
+      "public_bytes": 1056,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 512185,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5704334,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 71417,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 50958,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 7348792,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1095708,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 47125,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 11858125,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 15763000,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 42,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 153518708,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 369174041,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1041,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2125,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1185625,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 574493334,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "e70ff26adc2b65e4c27b27b2ca40a2860ce083b3e4a99d813a3f548821fcabb4",
+    "process": {
+      "peak_rss_bytes": 1388396544,
+      "wall_ns": 19612699667
+    },
+    "proof_checks": false,
+    "public_sha256": "f76f697ef73b17de2447aabf0a258299c51f009a196c27119baf3934ca65ad3a",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 524162,
+      "assignment_fixed_bytes": 16773184,
+      "constraints": 544528,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 34,
+      "pk_bytes": 117420656,
+      "proof_bytes": 128,
+      "public_bytes": 1056,
+      "vk_bytes": 1320,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 524128
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5787292,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 10589333,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 18301751625,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 81583,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 602917,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 602875,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 500382959,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 735241125,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2000,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 105375,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2268417,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 19612699667,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "4e912b54d22ea4a874e57f35c5232dd950bb940a3d11ebec195cdf3a8be58ed1",
+    "process": {
+      "peak_rss_bytes": 1387626496,
+      "wall_ns": 19572661541
+    },
+    "proof_checks": false,
+    "public_sha256": "f030fe0266e00be494a17c70de49322b900c2b2b2d6de25099bae2cdce1bbbf6",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 524162,
+      "assignment_fixed_bytes": 16773184,
+      "constraints": 544528,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 34,
+      "pk_bytes": 117420656,
+      "proof_bytes": 128,
+      "public_bytes": 1056,
+      "vk_bytes": 1320,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 524128
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5676417,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 15651500,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 18358473250,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 80500,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 612583,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 610417,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 467264500,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 676101750,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2166,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 108084,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2292542,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 19572661541,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n16",
+    "fixture_sha256": "4e912b54d22ea4a874e57f35c5232dd950bb940a3d11ebec195cdf3a8be58ed1",
+    "process": {
+      "peak_rss_bytes": 659963904,
+      "wall_ns": 580128583
+    },
+    "proof_checks": false,
+    "public_sha256": "f030fe0266e00be494a17c70de49322b900c2b2b2d6de25099bae2cdce1bbbf6",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 131072,
+      "gates": 107624,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9152,
+      "public_bytes": 1056,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 512185,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 5696666,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 393667,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 51709,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 7414417,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1047417,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 237292,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 12741666,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 15758000,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 154136834,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 367014916,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1167,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 2833,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1117583,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 580128583,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "b742161fdb2fb8ede33172ee025674f1cefedb46a2a586a9176aa81f25a3ddd8",
+    "process": {
+      "peak_rss_bytes": 2620424192,
+      "wall_ns": 39113341791
+    },
+    "proof_checks": false,
+    "public_sha256": "4ffb93b6534b1626ae7b22e108d1bac009f5878f569d33dbe036177f28f3761a",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 1048322,
+      "assignment_fixed_bytes": 33546304,
+      "constraints": 1089056,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 66,
+      "pk_bytes": 234840688,
+      "proof_bytes": 128,
+      "public_bytes": 2080,
+      "vk_bytes": 2344,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 1048256
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 11379167,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 30658375,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 36610065875,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 287042,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 760792,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 543416,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 927020875,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1432050042,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2166,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 113209,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 3930459,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 39113341791,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "b742161fdb2fb8ede33172ee025674f1cefedb46a2a586a9176aa81f25a3ddd8",
+    "process": {
+      "peak_rss_bytes": 775258112,
+      "wall_ns": 927748167
+    },
+    "proof_checks": false,
+    "public_sha256": "4ffb93b6534b1626ae7b22e108d1bac009f5878f569d33dbe036177f28f3761a",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 262144,
+      "gates": 212352,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9536,
+      "public_bytes": 2080,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 1024265,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 11310666,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 404333,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 94833,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 14123583,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2287250,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 274708,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 23907834,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 36783292,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 41,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 160651792,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 660048125,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2708,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2500,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1168500,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 927748167,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "fa463b569026e0608fb385744a762d422795cd0a1279f611a7713dd156885754",
+    "process": {
+      "peak_rss_bytes": 769802240,
+      "wall_ns": 889107625
+    },
+    "proof_checks": false,
+    "public_sha256": "d43546a4942f3507ce204c6a15099724ddf406814a5defbd57b78910161d6031",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 262144,
+      "gates": 212352,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9536,
+      "public_bytes": 2080,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 1024265,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 11388375,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 126584,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 99083,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 13599500,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2181208,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 61375,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 23909292,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 37989708,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 0,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 152425250,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 633877542,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1500,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 3375,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1212542,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 889107625,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "fa463b569026e0608fb385744a762d422795cd0a1279f611a7713dd156885754",
+    "process": {
+      "peak_rss_bytes": 2639282176,
+      "wall_ns": 38964729417
+    },
+    "proof_checks": false,
+    "public_sha256": "d43546a4942f3507ce204c6a15099724ddf406814a5defbd57b78910161d6031",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 1048322,
+      "assignment_fixed_bytes": 33546304,
+      "constraints": 1089056,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 66,
+      "pk_bytes": 234840688,
+      "proof_bytes": 128,
+      "public_bytes": 2080,
+      "vk_bytes": 2344,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 1048256
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 11267708,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 30669666,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 36631906583,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 85500,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 684625,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 538000,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 931389084,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1273109459,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2000,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 109917,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 4000750,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 38964729417,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "814969a5e4981d0e44bfbcc8ee243703b584bbc7fae28b7df312f43ecc278e50",
+    "process": {
+      "peak_rss_bytes": 2641559552,
+      "wall_ns": 39005939917
+    },
+    "proof_checks": false,
+    "public_sha256": "13e6090c1702994e97c7b3e42d80ad4605464174802c07f507cf4d3cd8ba5a27",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 1048322,
+      "assignment_fixed_bytes": 33546304,
+      "constraints": 1089056,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 66,
+      "pk_bytes": 234840688,
+      "proof_bytes": 128,
+      "public_bytes": 2080,
+      "vk_bytes": 2344,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 1048256
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 12933708,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 31087750,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 36634501375,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 82417,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 720208,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 542333,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 927953125,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1308873208,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2333,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 103208,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 3813125,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 39005939917,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n32",
+    "fixture_sha256": "814969a5e4981d0e44bfbcc8ee243703b584bbc7fae28b7df312f43ecc278e50",
+    "process": {
+      "peak_rss_bytes": 770015232,
+      "wall_ns": 879567166
+    },
+    "proof_checks": false,
+    "public_sha256": "13e6090c1702994e97c7b3e42d80ad4605464174802c07f507cf4d3cd8ba5a27",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 262144,
+      "gates": 212352,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9536,
+      "public_bytes": 2080,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 1024265,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 11347291,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 382542,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 102167,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 14168834,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2338166,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 295333,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 23993959,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 37247417,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 157821417,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 617321458,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1166,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 2625,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 1190792,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 879567166,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "dea4aea4db20bddbb413ea1fdd61572715a2fb6a46a705bdfa728c78890e5636",
+    "process": {
+      "peak_rss_bytes": 4578623488,
+      "wall_ns": 77987675709
+    },
+    "proof_checks": false,
+    "public_sha256": "75c22f0c5885d5c78cec88e98f6abc2c18c06f944352de72c289702e3ebed68d",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 2096642,
+      "assignment_fixed_bytes": 67092544,
+      "constraints": 2178112,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 130,
+      "pk_bytes": 469680752,
+      "proof_bytes": 128,
+      "public_bytes": 4128,
+      "vk_bytes": 4392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 2096512
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22572167,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 60866584,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 73314014625,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 313291,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1068500,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 588833,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1871556125,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2541926958,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2083,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 105458,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 7098417,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 77987675709,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "dea4aea4db20bddbb413ea1fdd61572715a2fb6a46a705bdfa728c78890e5636",
+    "process": {
+      "peak_rss_bytes": 1032290304,
+      "wall_ns": 1442834709
+    },
+    "proof_checks": false,
+    "public_sha256": "75c22f0c5885d5c78cec88e98f6abc2c18c06f944352de72c289702e3ebed68d",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 524288,
+      "gates": 421808,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9920,
+      "public_bytes": 4128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 2048425,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22460875,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 486833,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 190125,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 27071958,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 4537458,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 277291,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 48452042,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 83289834,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 0,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 156675041,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1078013458,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1166,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2625,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1166041,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1442834709,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "a0d00d6c6bb1b44fe6da6a4de1f4df81ac63bb4892913a55b7f9569f71e54649",
+    "process": {
+      "peak_rss_bytes": 1027096576,
+      "wall_ns": 1474998125
+    },
+    "proof_checks": false,
+    "public_sha256": "845ab4350b5f640b7311d403bbb355e75d7e9ee5282d9d62598ddb6eb3d1b2d0",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 524288,
+      "gates": 421808,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9920,
+      "public_bytes": 4128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 2048425,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22809250,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 178959,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 192292,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 27696875,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 4477833,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 70083,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 46291458,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 82905209,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 0,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 155616209,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1115842208,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 5125,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2417,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1229042,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1474998125,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "a0d00d6c6bb1b44fe6da6a4de1f4df81ac63bb4892913a55b7f9569f71e54649",
+    "process": {
+      "peak_rss_bytes": 4966383616,
+      "wall_ns": 77637338000
+    },
+    "proof_checks": false,
+    "public_sha256": "845ab4350b5f640b7311d403bbb355e75d7e9ee5282d9d62598ddb6eb3d1b2d0",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 2096642,
+      "assignment_fixed_bytes": 67092544,
+      "constraints": 2178112,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 130,
+      "pk_bytes": 469680752,
+      "proof_bytes": 128,
+      "public_bytes": 4128,
+      "vk_bytes": 4392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 2096512
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22670917,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 62957250,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 72873738042,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 81584,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1014667,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 542375,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1836005333,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2648991292,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2125,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 106708,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 7097875,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 77637338000,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "6f410290a749b87773faf6d2e566c166314be3e8e5d29a6c34a9c455bd4b856c",
+    "process": {
+      "peak_rss_bytes": 4980752384,
+      "wall_ns": 77727833958
+    },
+    "proof_checks": false,
+    "public_sha256": "79a9d90271ba444ba8ad684acea2999f517ee66636d00f693813811aaf06817b",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 2096642,
+      "assignment_fixed_bytes": 67092544,
+      "constraints": 2178112,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 130,
+      "pk_bytes": 469680752,
+      "proof_bytes": 128,
+      "public_bytes": 4128,
+      "vk_bytes": 4392,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 2096512
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22501292,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 60372750,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 73082997750,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 70125,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1082291,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 572167,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1827397708,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2539403625,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 2084,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 103375,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 7133709,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 77727833958,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "flat_aggregation_n64",
+    "fixture_sha256": "6f410290a749b87773faf6d2e566c166314be3e8e5d29a6c34a9c455bd4b856c",
+    "process": {
+      "peak_rss_bytes": 1030144000,
+      "wall_ns": 1479132541
+    },
+    "proof_checks": false,
+    "public_sha256": "79a9d90271ba444ba8ad684acea2999f517ee66636d00f693813811aaf06817b",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 524288,
+      "gates": 421808,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 9920,
+      "public_bytes": 4128,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 2048425,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 22367875,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 442333,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 196875,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 27000792,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 4507875,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 244292,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 47165958,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 83368792,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 42,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 159381542,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1112360042,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1333,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 7875,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1286250,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1479132541,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "emit_mint",
+    "fixture_sha256": "3e41a0bfdd0819be901d2bdac5ce350a73d5aba19d6a5dd1393d33e62b3b0fb3",
+    "process": {
+      "peak_rss_bytes": 105054208,
+      "wall_ns": 948646958
+    },
+    "proof_checks": false,
+    "public_sha256": "a246273286e357fdeb4a09ad874025eec17a6d3df2f6f324c7055bdc4bf256b0",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": 23590,
+      "assignment_fixed_bytes": 754880,
+      "constraints": 23563,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 9,
+      "pk_bytes": 4823280,
+      "proof_bytes": 128,
+      "public_bytes": 256,
+      "vk_bytes": 520,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 23581
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5582166,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 764667,
+        "sample": 1,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 803905708,
+        "sample": 1,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 2237875,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 527292,
+        "sample": 1,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 534875,
+        "sample": 1,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 39552000,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 86578792,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 2208,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 102875,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 775875,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 948646958,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "emit_mint",
+    "fixture_sha256": "3e41a0bfdd0819be901d2bdac5ce350a73d5aba19d6a5dd1393d33e62b3b0fb3",
+    "process": {
+      "peak_rss_bytes": 436076544,
+      "wall_ns": 260654291
+    },
+    "proof_checks": false,
+    "public_sha256": "a246273286e357fdeb4a09ad874025eec17a6d3df2f6f324c7055bdc4bf256b0",
+    "sample": 1,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 16384,
+      "gates": 9123,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8000,
+      "public_bytes": 256,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 21380,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5662917,
+        "sample": 1,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 280542,
+        "sample": 1,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 7959,
+        "sample": 1,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 304167,
+        "sample": 1,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 48042,
+        "sample": 1,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 206833,
+        "sample": 1,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1076334,
+        "sample": 1,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 314875,
+        "sample": 1,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 41,
+        "sample": 1,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 154807250,
+        "sample": 1,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 87266541,
+        "sample": 1,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 917,
+        "sample": 1,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 3708,
+        "sample": 1,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1128792,
+        "sample": 1,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 260654291,
+        "sample": 1,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "emit_mint",
+    "fixture_sha256": "3e3be647baaa027fa8eda0846c02132c7ede01716e2738ae92bbb236933f3192",
+    "process": {
+      "peak_rss_bytes": 436027392,
+      "wall_ns": 262615459
+    },
+    "proof_checks": false,
+    "public_sha256": "8a190ff831fa02a11e27067883b22fe52c13bd57cfe0180b8d9d7384c21152dd",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 16384,
+      "gates": 9123,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8000,
+      "public_bytes": 256,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 21380,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5604750,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 27250,
+        "sample": 2,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 7416,
+        "sample": 2,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 292708,
+        "sample": 2,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 49708,
+        "sample": 2,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 17125,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1074208,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 325500,
+        "sample": 2,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 41,
+        "sample": 2,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 157142125,
+        "sample": 2,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 86680584,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1250,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 4000,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1073292,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 262615459,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "emit_mint",
+    "fixture_sha256": "3e3be647baaa027fa8eda0846c02132c7ede01716e2738ae92bbb236933f3192",
+    "process": {
+      "peak_rss_bytes": 100253696,
+      "wall_ns": 955279792
+    },
+    "proof_checks": false,
+    "public_sha256": "8a190ff831fa02a11e27067883b22fe52c13bd57cfe0180b8d9d7384c21152dd",
+    "sample": 2,
+    "sizes": {
+      "assignment_fields": 23590,
+      "assignment_fixed_bytes": 754880,
+      "constraints": 23563,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 9,
+      "pk_bytes": 4823280,
+      "proof_bytes": 128,
+      "public_bytes": 256,
+      "vk_bytes": 520,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 23581
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5664167,
+        "sample": 2,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 514541,
+        "sample": 2,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 803725458,
+        "sample": 2,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 61333,
+        "sample": 2,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 439625,
+        "sample": 2,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 560917,
+        "sample": 2,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 39607750,
+        "sample": 2,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 95332375,
+        "sample": 2,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 2083,
+        "sample": 2,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 104916,
+        "sample": 2,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 799958,
+        "sample": 2,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 955279792,
+        "sample": 2,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "groth16",
+    "circuit": "emit_mint",
+    "fixture_sha256": "345a4558460be40a052840b269c3d6b990c0989da099c95ff268817cd894e371",
+    "process": {
+      "peak_rss_bytes": 102318080,
+      "wall_ns": 944653833
+    },
+    "proof_checks": false,
+    "public_sha256": "ed787e2df753bc0730e08f0516c9df66ec691d4765d4ecaf9ec6211c45a559f1",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": 23590,
+      "assignment_fixed_bytes": 754880,
+      "constraints": 23563,
+      "dyadic_size": null,
+      "gates": null,
+      "instance_variables": 9,
+      "pk_bytes": 4823280,
+      "proof_bytes": 128,
+      "public_bytes": 256,
+      "vk_bytes": 520,
+      "witness_msgpack_bytes": null,
+      "witness_variables": 23581
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5768167,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 482375,
+        "sample": 3,
+        "stage": "pk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 801085417,
+        "sample": 3,
+        "stage": "pk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 72750,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 479083,
+        "sample": 3,
+        "stage": "vk_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 550292,
+        "sample": 3,
+        "stage": "vk_prepare"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 39435083,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 87721416,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 2500,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 104167,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 779875,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 944653833,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "backend": "noir_bb",
+    "circuit": "emit_mint",
+    "fixture_sha256": "345a4558460be40a052840b269c3d6b990c0989da099c95ff268817cd894e371",
+    "process": {
+      "peak_rss_bytes": 436535296,
+      "wall_ns": 265574667
+    },
+    "proof_checks": false,
+    "public_sha256": "ed787e2df753bc0730e08f0516c9df66ec691d4765d4ecaf9ec6211c45a559f1",
+    "sample": 3,
+    "sizes": {
+      "assignment_fields": null,
+      "assignment_fixed_bytes": null,
+      "constraints": null,
+      "dyadic_size": 16384,
+      "gates": 9123,
+      "instance_variables": null,
+      "pk_bytes": null,
+      "proof_bytes": 8000,
+      "public_bytes": 256,
+      "vk_bytes": 1888,
+      "witness_msgpack_bytes": 21380,
+      "witness_variables": null
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 5599083,
+        "sample": 3,
+        "stage": "fixture"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 32083,
+        "sample": 3,
+        "stage": "artifact_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 4709,
+        "sample": 3,
+        "stage": "artifact_base64"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 292000,
+        "sample": 3,
+        "stage": "program_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 49042,
+        "sample": 3,
+        "stage": "acir_gunzip"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 25042,
+        "sample": 3,
+        "stage": "vk_read"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1082458,
+        "sample": 3,
+        "stage": "witness"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 308250,
+        "sample": 3,
+        "stage": "witness_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 0,
+        "sample": 3,
+        "stage": "backend_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 158353209,
+        "sample": 3,
+        "stage": "srs_init"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 89543750,
+        "sample": 3,
+        "stage": "prove"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1000,
+        "sample": 3,
+        "stage": "proof_encode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 3959,
+        "sample": 3,
+        "stage": "proof_decode"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1134750,
+        "sample": 3,
+        "stage": "verify"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 265574667,
+        "sample": 3,
+        "stage": "process_wall"
+      }
+    ],
+    "verified": true
+  }
+]

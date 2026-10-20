@@ -1,0 +1,101 @@
+{
+  "environment": {
+    "captured_at": "2026-10-19T17:28:00.131Z",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "platform": "MacIntel",
+    "user_agent_data": null,
+    "hardware_concurrency_reported": 18,
+    "device_memory_gib_reported": null,
+    "languages": [
+      "en-US"
+    ],
+    "screen": {
+      "width": 390,
+      "height": 844,
+      "device_pixel_ratio": 1
+    },
+    "secure_context": false,
+    "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+    "requested_execution_threads": 1,
+    "thread_policy": "One execution thread per browser Worker. Noir selects the compatible BB WASM artifact from cross-origin isolation / SharedArrayBuffer availability; execution remains single-threaded.",
+    "memory_policy": "Observed WASM linear-memory capacities only. Noir totals sum Rust fixture, ACVM, ABI and BB module capacities; component snapshots identify the measured modules. Excludes JS buffers, runtime RSS, physical RAM and peak memory.",
+    "timezone": "Europe/Kiev",
+    "visibility_at_start": "visible",
+    "physical_phone": false,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "checks": {
+    "three_poseidon_proofs_one_decode": {
+      "workers": 1,
+      "assets": 3,
+      "created_after": 1,
+      "assets_after": 3
+    },
+    "old_canonical_keys_verified": true,
+    "release_resets_readiness": true,
+    "cold_two_samples_two_workers": true,
+    "capacity_invalidates": true,
+    "nova_reuses_real_session": true,
+    "noir_reuses_session_across_wrapping_toggle": true,
+    "idle_worker_error_invalidates": true,
+    "idle_error_recovery_verified": true,
+    "corrupted_pk_rejected": "assets/demo_tribute/groth16/poseidon2/pk.bin: SHA-256 не совпадает с manifest. Скачивание или комплект файлов повреждены.",
+    "cancel_during_key_decode_resets_readiness": true,
+    "worker_close_delivery_is_asynchronous": true,
+    "recovery_after_cancel_verified": true,
+    "mobile_no_horizontal_overflow": true,
+    "navigation_releases_worker": true
+  },
+  "observations": {
+    "records": 20,
+    "preparation_records": 9,
+    "completed_preparations": 7,
+    "cancelled_preparations": 1,
+    "failed_preparations": 1,
+    "verified_client_proofs": 13,
+    "verified_outer_wrappers": 2,
+    "csv_rows": 647,
+    "json_format": 2
+  },
+  "reuse": {
+    "preparation_id": "prep-1",
+    "pk_decode_count": 1,
+    "pk_decode_elapsed_ns": 5190800000,
+    "proofs_using_this_preparation": 3,
+    "new_workers_during_these_proofs": 0,
+    "new_asset_requests_during_these_proofs": 0
+  },
+  "public_statement_equivalence": {
+    "canonical_poseidon2_and_noir": true,
+    "sample": 1,
+    "statement_digest": "553f5c6bb93eb8d0c6394f4060eabcf3299ae5a1a3b82139cddea97ade1cadad"
+  },
+  "native_verification": {
+    "command": "cargo test --release -p ownership-rd --lib",
+    "passed": 30,
+    "failed": 0,
+    "elapsed_seconds": 35.68,
+    "coverage": [
+      "full-proof public/signature/Merkle mutations",
+      "canonical/Poseidon2 signature cross-rejection",
+      "value-independent full-proof topology",
+      "real fresh Groth16 proofs with the same held key",
+      "canonical baseline matrix preservation"
+    ],
+    "built_packages": [
+      "ownership-rd",
+      "groth16-tribute"
+    ]
+  },
+  "preparation_command": "target/release/ownership-rd prepare-demo --scheme poseidon2 --out target/ownership-rd-demo-1",
+  "scope": {
+    "poseidon2_full_proof": "Groth16 only; same unaudited R&D signature as flat aggregation",
+    "canonical_noir_and_wrapper_unchanged": true,
+    "backend_keys_still_cold_per_request": true
+  },
+  "browser_fault_injection": "Real idle Worker uncaught JS exception; real PK download replaced with same-length corrupted bytes. Not a physical OOM simulation.",
+  "page_errors": []
+}

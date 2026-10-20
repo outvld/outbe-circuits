@@ -1,0 +1,278 @@
+{
+  "environment": {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "physical_phone": false,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "host": {
+      "model": "Mac17,8",
+      "cpu": "Apple M5 Pro",
+      "logical_cpus": 18,
+      "memory_bytes": 51539607552,
+      "go": "go1.27.2",
+      "GOMEMLIMIT": "16GiB",
+      "GOMAXPROCS": 12
+    }
+  },
+  "control_checks": {
+    "demo": {
+      "circuit": "demo_tribute",
+      "engine": "groth16",
+      "scheme": "canonical",
+      "capacity": "1",
+      "novaDisabled": true,
+      "capacityDisabled": true
+    },
+    "restored": {
+      "engine": "nova",
+      "scheme": "poseidon2",
+      "capacity": "8"
+    }
+  },
+  "browser_counts": {
+    "series": 10,
+    "client_verified": 21,
+    "demo_local": 12,
+    "demo_wrapped": 6,
+    "flat_regressions": 3
+  },
+  "noir": {
+    "engine": "noir_bb",
+    "circuit": "demo_tribute",
+    "scheme": "canonical",
+    "capacity": 1,
+    "sample": 2,
+    "passed": true,
+    "checks": [
+      {
+        "name": "valid_proof",
+        "rejected": false,
+        "verified": true
+      },
+      {
+        "name": "changed_public_0",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "changed_public_1",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "changed_public_2",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "changed_public_3",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "public_arity_short",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier public-input arity/field width mismatch"
+      },
+      {
+        "name": "public_arity_long",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier public-input arity/field width mismatch"
+      },
+      {
+        "name": "truncated_proof",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier proof length/field width mismatch"
+      },
+      {
+        "name": "damaged_proof",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "bad_signature",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "bad_owner",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "bad_merkle_root",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "bad_merkle_sibling",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "bad_merkle_direction",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "valid_after_rejections",
+        "rejected": false,
+        "verified": true
+      }
+    ],
+    "statement_digest": "306d3960c0e52c81e7e0193b862d2f42fefb87e5f52af10c5ffc96671e426d34",
+    "witness_digest": "7183a3c0a6c54e0d2c161b4d43033e7e7e1ce9fefd45e2778cab8755fb1478a5"
+  },
+  "wrapper": {
+    "real_http_tampering": [
+      {
+        "name": "outer_public_0",
+        "status": 422,
+        "rejected": true,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "name": "outer_public_1",
+        "status": 422,
+        "rejected": true,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "name": "outer_public_2",
+        "status": 422,
+        "rejected": true,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "name": "outer_public_3",
+        "status": 422,
+        "rejected": true,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "name": "outer_proof_bytes",
+        "status": 422,
+        "rejected": true,
+        "error": "expected 196 bytes"
+      },
+      {
+        "name": "wrong_inner_vk",
+        "status": 400,
+        "rejected": true,
+        "error": "circuit or inner VK pin mismatch"
+      }
+    ],
+    "uploaded_fields": [
+      "circuit",
+      "inner_vk_sha256",
+      "proof_hex",
+      "public_inputs"
+    ],
+    "busy_http_status": 409,
+    "cancelled_native_run_status": "cancelled",
+    "valid_outer_verified_after_cancellation": true,
+    "client_rejected_mismatched_response": {
+      "transport_test": true,
+      "error": "Backend: proof / public inputs / VK / statement не совпадают с клиентским экспортом."
+    },
+    "unavailable_backend_preserves_opt_in": true,
+    "unavailable_backend_stops_run": true,
+    "outer_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+    "no_client_outer_verifier": true,
+    "nondefault_recursive_accumulator_tested": false
+  },
+  "checks_exercised": [
+    {
+      "command": "cargo test --release -p ownership-rd --lib",
+      "passed": 27
+    },
+    {
+      "command": "go test -v -run 'TestExactBB5ProofConstraints|TestInputEncodings' -count=1",
+      "passed": true,
+      "notes": "Genuine BB proof satisfies actual R1CS; 13 altered statements/proofs rejected."
+    },
+    {
+      "command": "go test -v -run 'TestService|TestNativeChild|TestMetadata|TestBoundedOutput' -count=1",
+      "passed": true
+    },
+    {
+      "command": "go test -run TestServerRejectsOccupiedIPv4Port -count=1",
+      "passed": true
+    },
+    {
+      "command": "ULTRAHONK_WRAP_KEYS=... ULTRAHONK_WRAP_RESULT=... go test -v -run TestGroth16ProofBinding -count=1",
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "command": "GOMEMLIMIT=16GiB GOMAXPROCS=12 ULTRAHONK_WRAP_KEYS=... ULTRAHONK_WRAP_RESULT=... go test -v ./... -count=1",
+      "passed": true,
+      "outer_proof_test_skipped": false,
+      "package_seconds": 9.306
+    }
+  ],
+  "setup": {
+    "circuit": "demo_tribute",
+    "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+    "inner_proof_system": "ultrahonk-keccak",
+    "noir_version": "1.0.0-beta.22",
+    "barretenberg_version": "5.0.0-nightly.20260522",
+    "disable_zk": false,
+    "ipa_accumulation": false,
+    "optimizedSolidityVerifier": false,
+    "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+    "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+    "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+    "outer_curve": "bn254",
+    "setup_kind": "single-party-experimental-not-production",
+    "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+    "created_utc": "2026-10-19T16:38:54.646696Z",
+    "go_version": "go1.27.2",
+    "structural_counts": {
+      "constraints": 13740642,
+      "internal_variables": 16419365,
+      "secret_variables": 448,
+      "public_inputs": 4,
+      "groth16_commitment_extensions": 1
+    },
+    "artifact_sha256": {
+      "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+      "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+      "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+    },
+    "setup_timings_ms": {
+      "constraint_compile": 28011.148958,
+      "groth16_setup": 426739.337417
+    },
+    "artifact_bytes": {
+      "circuit.r1cs": 1157463005,
+      "proving.key": 2854149013,
+      "verifying.key": 624
+    },
+    "process": {
+      "command": "GOMEMLIMIT=16GiB GOMAXPROCS=12 /usr/bin/time -l target/ultrahonk-wrap setup --out target/ultrahonk-wrap-1",
+      "elapsed_seconds": 581.82,
+      "user_seconds": 3697.13,
+      "sys_seconds": 130.63,
+      "peak_rss_bytes": 12094357504,
+      "peak_memory_footprint_bytes": 17217819960,
+      "notes": "One setup observation; overlapped lightweight browser validation and build, not an isolated setup benchmark. Source: /usr/bin/time -l; peak footprint differs from RSS."
+    }
+  },
+  "export_integrity": {
+    "csv_rows": 1129,
+    "client_proofs": 21,
+    "unique_outer_proofs": 6,
+    "matching_statements_and_witnesses_across_engines": true
+  }
+}

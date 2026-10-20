@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file. See [conven
 #### Features
 - Add read-only `cargo xtask freeze-circuits --check` with pinned-toolchain checks: complete L1 artifact reproduction and L2 VK-pin reproduction. CI relies on its exit status, without Git-diff or untracked-file guards.
 - Derive L1 source/artifact paths by convention and place L2 frozen artifacts directly in their packages. Stable chain versions prohibit key changes but permit unchanged-key source/ABI edits; mutable Demo stays on chain version `1.0.0` and refreshes its key explicitly. Chain versions never auto-bump, and a stable reference protects a package shared with mutable versions.
+- Add Demo Tribute (`full_proof`) to the isolated WASM lab with real Groth16 and Noir/UltraHonk proofs, depth-32 inclusion, and explicit statement selection.
+- Add an opt-in native Groth16 wrapper that constrains the pinned Demo Tribute UltraHonk verifier, preserves all four public inputs, and records per-process memory, proving/key-load costs, and actual compressed proof sizes. Research-only, unaudited single-party setup; canonical artifacts remain unchanged.
+- Separate WASM preparation from proving: retain decoded keys across warm series, expose explicit release/invalidation, and export preparation costs once with references from proof runs.
+- Add the experimental Poseidon2 signature to Groth16 Demo Tribute (`full_proof`), preserving depth-32 inclusion and public-input layout; provide isolated `prepare-demo` keys without changing canonical Noir or wrapper VKs.
+- Initialize the experimental UltraHonk wrapper's checked R1CS/PK/VK once at server startup and reuse them for requests. Separate startup metrics from request timings, report resident process-lifetime RSS honestly, and retain busy admission until an already-started native operation finishes after client cancellation.
 
 - - -
 ## v0.26.0 - 2026-09-30

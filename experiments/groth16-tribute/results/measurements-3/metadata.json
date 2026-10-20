@@ -1,0 +1,828 @@
+{
+  "architecture": "aarch64",
+  "core_rows": 54,
+  "cpu_model": "Apple M5 Pro",
+  "diagnostics_path": "target/groth16-tribute-3/runs-2",
+  "effective_native_threads": "not measured",
+  "emit_fixture": "partial mint with a wide amount, cross-limb borrowing and a real index-5 inclusion path among eight notes; canonical native Emit hashes; full mint and frozen limb-range boundaries additionally checked",
+  "emit_statement": {
+    "arithmetic": "mirrors pinned noir-bignum v0.10.0 integer ordering and subtraction-flag constraints; honest ordered subtraction assigns underflow=false",
+    "limb_bits": [
+      120,
+      120,
+      17
+    ],
+    "public_words": 8,
+    "version": "1.5.0"
+  },
+  "encodings": {
+    "bb_proof": "concatenated 32-byte proof fields, excludes publics",
+    "bb_witness": "raw msgpack",
+    "fixture_sha256": "entire flattened Noir ABI vector as canonical 32-byte big-endian fields",
+    "groth16_assignment": "field count and 32-byte fixed footprint including constant one and publics, not serialized",
+    "groth16_proof_keys": "arkworks checked compressed canonical, not EVM calldata",
+    "public_inputs": "canonical 32-byte big-endian fields"
+  },
+  "fixture_seed": "0x7472696275746500 ^ ((case_index as u64) << 32) ^ sample_number; Demo index 0, ascending flat capacities indices 1..7, Emit index 8",
+  "historical_revision": "a9fe83ed95bc9bf6335ffac4ffe0ee983cd6f821",
+  "logical_cores": 18,
+  "measured_timestamp_utc": "2026-10-19T10:50:00Z",
+  "memory_measurement": {
+    "display_unit": "MiB = 1048576 bytes",
+    "excluded": "parent process, compile subprocess and CLI VK derivation memory",
+    "process_wall": "parent Instant around invocation including timing wrapper, log setup, process startup and shutdown; excludes post-exit resource parsing",
+    "raw_logs": "*.resources.txt under diagnostics_path; setup logs under prepared-directory/logs",
+    "scope": "entire fresh worker process, not per-stage; Groth16 setup includes key writes; samples include fixture, loading, proving, verification and worker exit",
+    "source": "Darwin /usr/bin/time -l; ru_maxrss in bytes",
+    "statistics": "individual process peaks, not averages across runs"
+  },
+  "os": "Darwin 27.0.0",
+  "preparation": {
+    "current_l1_versions": {
+      "emit_mint": "1.5.0"
+    },
+    "historical_revision": "a9fe83ed95bc9bf6335ffac4ffe0ee983cd6f821",
+    "memory": [
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "peak_rss_bytes": 128073728,
+        "process_wall_ns": 199825542,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "peak_rss_bytes": 78594048,
+        "process_wall_ns": 121997417,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "peak_rss_bytes": 161021952,
+        "process_wall_ns": 231711958,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "peak_rss_bytes": 295763968,
+        "process_wall_ns": 424765584,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "peak_rss_bytes": 584187904,
+        "process_wall_ns": 877315917,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "peak_rss_bytes": 1189150720,
+        "process_wall_ns": 1815687500,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "peak_rss_bytes": 2252488704,
+        "process_wall_ns": 3412701709,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "peak_rss_bytes": 4407623680,
+        "process_wall_ns": 6991219500,
+        "sample": 0
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "peak_rss_bytes": 86540288,
+        "process_wall_ns": 130557417,
+        "sample": 0
+      }
+    ],
+    "sha256": {
+      "artifacts/demo_tribute/abi.json": "99f289e1b5ab876e16bf49a67886d3d654f46eb64040b44b48d9e8fd81833aad",
+      "artifacts/demo_tribute/bytecode.b64": "05fb300bd0877f7628849201d65d7147516c33d9dfe43e1a280d4544e4e205de",
+      "artifacts/demo_tribute/circuit.vk": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+      "artifacts/emit_mint/abi.json": "0ff03bfffe2532d0fabb68cbb1004ce6589596727b1b4cf593ff2fe9c463db5d",
+      "artifacts/emit_mint/bytecode.b64": "ded6b5c72f3f95868a99d6e63bfe994e949e98bec25d610f2b76f1f2781f8886",
+      "artifacts/emit_mint/circuit.vk": "2468f5b3285e2537048aff586b9520ee3a6edb4545456a8dbe4416ebaa3daa8c",
+      "artifacts/flat_aggregation_n1/abi.json": "96d8a439d27f7294125f62a1cf15459c148506bd531036dc4d6853222f7a4b3d",
+      "artifacts/flat_aggregation_n1/bytecode.b64": "37a0a1ed405c67cf3dcd21e12d12273d1b12c86f6d4c42836b3677b2d7aa3d98",
+      "artifacts/flat_aggregation_n1/circuit.vk": "0de346d77b086462623c21a60fa5f4d187323fd87e62da5ea3172b04a1465f17",
+      "artifacts/flat_aggregation_n16/abi.json": "72c4bf6c9c39b3c80d0a54a25579d19d29919974a1463a3726fb7f592ab69ee8",
+      "artifacts/flat_aggregation_n16/bytecode.b64": "3b8c9d7f0bfa3c9c59089c7abcef930dcc6f6e1bc634febe83222b38ec8e56d4",
+      "artifacts/flat_aggregation_n16/circuit.vk": "ac4c39a1fae806147b430d4c0b14942b5794a1cc7bb5f267cac8d3dd1ce3fd73",
+      "artifacts/flat_aggregation_n2/abi.json": "15884822e9529473da478f85e15618efa40b4e6b3d7a06eba697d252d7c78574",
+      "artifacts/flat_aggregation_n2/bytecode.b64": "d94a44553cfc9040462dbf584b3aeb8881cb51c1b045e472a258681570ac305d",
+      "artifacts/flat_aggregation_n2/circuit.vk": "ee0735671b6eb43e8696c16dc0871e5afcf2580f5d33a7c4bc840555e8c14066",
+      "artifacts/flat_aggregation_n32/abi.json": "d662e98390b31c6326e4ffd8317c7a6bb45b21882b998594a5cdb1793cac5645",
+      "artifacts/flat_aggregation_n32/bytecode.b64": "dcefd7e341433b412d9653a83a7e07deb525df2c56ac95d8a558372cba22dc31",
+      "artifacts/flat_aggregation_n32/circuit.vk": "271fb1cf831ec24e4eb180f66877313ded8a2b4ebbb88963d15f21824f1c8f76",
+      "artifacts/flat_aggregation_n4/abi.json": "bc25a58d1fe6f20556702de1b92b42cc29bc3f04683afcf7a0da99b81d4cae34",
+      "artifacts/flat_aggregation_n4/bytecode.b64": "d4d2dce85a0c1a32b24f71545d1834945ff6adabb1c920eade0741078983d38f",
+      "artifacts/flat_aggregation_n4/circuit.vk": "973196aecd59c2d3b9dee87356176b700b35f90ecb3eaa13c76d795de285a5bd",
+      "artifacts/flat_aggregation_n64/abi.json": "d545c5afce687efb8c1ee21fb10cb120a917ffb682f690c7e7f59ee60b1ec896",
+      "artifacts/flat_aggregation_n64/bytecode.b64": "1f65977dd14b604dee689cdf53fa1cc463e2ac94803f647bcadbb0e3b0ce87d6",
+      "artifacts/flat_aggregation_n64/circuit.vk": "d6c430164e5877ffc865c6d0fdd10b833d8a047336c05c8c69904897bef69289",
+      "artifacts/flat_aggregation_n8/abi.json": "6efc33febc65d1debb49b0a84a405565bde631c785b6a4a6789ee6ae3720bc40",
+      "artifacts/flat_aggregation_n8/bytecode.b64": "99b5d67811b7f16a1d87df89d2155d06766c12543a84f2bc2cec8af749b478df",
+      "artifacts/flat_aggregation_n8/circuit.vk": "3d0cde47cf9b76206b679dae3f225d4f04cd3f9dffb42721c1c98ca420110eb4",
+      "current/l2/57005/tribute/Nargo.toml": "506735e371010e38d854e3fee05969f19bac88a1781911eff61f8eb41236bfd9",
+      "current/l2/57005/tribute/src/main.nr": "cebcbc3fe98299ba25013344db8fe4453d72c668daf495b965a3ec3b1a7815dc",
+      "current/noir/emit_mint/Nargo.toml": "e4c227d90b53f5aeae420db4cec38aeea8a9c5cfb69828dcd3b653aecfdb3f58",
+      "current/noir/emit_mint/src/emit.nr": "5ee59ed6e0a17307d34d24db532999730855605548fb3f6efcc01fb302f3891e",
+      "current/noir/emit_mint/src/main.nr": "794f240b48d7016772c33b499a9c8a9e1c48eb07e6927318ff77aba26ca76909",
+      "current/noir/emit_mint/src/tests.nr": "f0a22902423a15c58d871b0cfa945bd89d0039c514dfb1f15a50d016668446e6",
+      "current/noir/outbe-circuit-core/Nargo.toml": "8aa5c24abe1b9a4d408c8591b457ee2c8686183bd02e37f6933e2f47d0d94330",
+      "current/noir/outbe-circuit-core/src/hash.nr": "7c860b8ade553a4faeb5570d537b826ca165deaf8b7452f483614876557202d3",
+      "current/noir/outbe-circuit-core/src/lib.nr": "0cc35e25a52ebe5c4f2f169f20c08de136c9431e530713441ffefeb1c31f0b63",
+      "current/noir/outbe-circuit-core/src/merkle_tree.nr": "f5c66bdd692fab19fe4df0700e8396849d32b39429cbaacaec325cd8501134a1",
+      "current/noir/outbe-circuit-core/src/ownership.nr": "3bddd55db2d875143f1c4cd6bb090144d2027f57868b6e45ac555d94e0f44de7",
+      "current/noir/outbe-circuit-core/src/tags.nr": "fe573421cdfc7ef6d2c55e8f028b644ed8cfff703a6e34ab69b1653361c2f00f",
+      "current/noir/outbe-circuit-core/src/types.nr": "b80fa05e8a69f0e1c627fe977ed6ba050f793859de95e59d9c3582bd272185ac",
+      "historical/noir/outbe-circuit-core/Nargo.toml": "8aa5c24abe1b9a4d408c8591b457ee2c8686183bd02e37f6933e2f47d0d94330",
+      "historical/noir/outbe-circuit-core/src/hash.nr": "7c860b8ade553a4faeb5570d537b826ca165deaf8b7452f483614876557202d3",
+      "historical/noir/outbe-circuit-core/src/lib.nr": "0cc35e25a52ebe5c4f2f169f20c08de136c9431e530713441ffefeb1c31f0b63",
+      "historical/noir/outbe-circuit-core/src/merkle_tree.nr": "196d747c90112ffaefe8385e9d3ab3247e2e69347335a073c1329c8f39b74fe0",
+      "historical/noir/outbe-circuit-core/src/ownership.nr": "1bcc95acd7168aeb25618031b461ac79675dd11a608cd790855d341de54cf52e",
+      "historical/noir/outbe-circuit-core/src/tags.nr": "6a7c03c145e600d1fa61515e258a7973ddaf2c22525161fc0434226d360aa234",
+      "historical/noir/outbe-circuit-core/src/types.nr": "b80fa05e8a69f0e1c627fe977ed6ba050f793859de95e59d9c3582bd272185ac",
+      "historical/noir/outbe-flat-aggregation-circuit-n1/Nargo.toml": "287adfa9f3587c13637b4b8e91aae19e4697d08dfacdc6c9698a746f94c89c67",
+      "historical/noir/outbe-flat-aggregation-circuit-n1/src/main.nr": "6af7a9ec205fc32db0fb373c5b56c3349393b8ed625dd716dbc4ad94c8bc4f1d",
+      "historical/noir/outbe-flat-aggregation-circuit-n16/Nargo.toml": "a11532d3c3a8b850eaee21b428dc06f63810fb4933bd184cb608390d375dba62",
+      "historical/noir/outbe-flat-aggregation-circuit-n16/src/main.nr": "29718418ec64aba194340f78e3aa97e746eab2d82e7f74be5e04f76a6716be50",
+      "historical/noir/outbe-flat-aggregation-circuit-n2/Nargo.toml": "f78babc8cc827dee43996ed0a417d9d1c5daff89b389093734d5de23bb55aea3",
+      "historical/noir/outbe-flat-aggregation-circuit-n2/src/main.nr": "5fb3879ec1713961a1f0054c69a1621df35ae6e34678461634a7bdf930716066",
+      "historical/noir/outbe-flat-aggregation-circuit-n32/Nargo.toml": "a5958fba1126f6fb46a759555669d7d899e78ace9b1bb9d7d2c646217d85646e",
+      "historical/noir/outbe-flat-aggregation-circuit-n32/src/main.nr": "1725ca04179f0da6933584ec567e8baf3e77952bf1e2a6f0c9e8326461237d29",
+      "historical/noir/outbe-flat-aggregation-circuit-n4/Nargo.toml": "5db8c7620bd1cffb7f7fa02ca29d74ddc1a37490c751f4cb4d74a8f3ce620611",
+      "historical/noir/outbe-flat-aggregation-circuit-n4/src/main.nr": "86267d2b7358cce4c45db39c4a9a05b573446ad3eb562bbbd41814e409a64f0a",
+      "historical/noir/outbe-flat-aggregation-circuit-n64/Nargo.toml": "bbce6a96b5535f396bc96bed7167b12f37bbdda2e9f7d1fd377c28199ce4c9d7",
+      "historical/noir/outbe-flat-aggregation-circuit-n64/src/main.nr": "a88c46b8053085674b078b2ab4bd9a9071c1b8554a22d0d4ee6de0c86c711208",
+      "historical/noir/outbe-flat-aggregation-circuit-n8/Nargo.toml": "de1d6654e5094a8631c0eb52a7790b66b2ac54e2dd30f4e34a5b5514476cdd67",
+      "historical/noir/outbe-flat-aggregation-circuit-n8/src/main.nr": "c3642bbc674ed353ab9334516dc28f7e820db92c4aaca4926eb758032393e5a3",
+      "keys/demo_tribute/pk.bin": "a175ca2828e48d1a74df5013847eeb7e9d14421a859c06e8f29a431313dc3f68",
+      "keys/demo_tribute/vk.bin": "3a633a71744b5bc4aa6ddda7a3cd473abd72d628e6702c3ac91dfaf8f740bf53",
+      "keys/emit_mint/pk.bin": "8dc2602abb53725acfe4f787c169a3781c4bf85f31a9273d8cd3ef5e67b37065",
+      "keys/emit_mint/vk.bin": "089e4fb9498daa5663cccda2d1700dadcfe3415a256066327338fe695d4b3790",
+      "keys/flat_aggregation_n1/pk.bin": "2881154326e00b74cac38087dab1feacd007b0177e55b2eca53bba34311d2aee",
+      "keys/flat_aggregation_n1/vk.bin": "a311d0e17971a866ed1a9d3fbf0e508739e529963a4cb9a4c46008923942fc4c",
+      "keys/flat_aggregation_n16/pk.bin": "fc1672d66818d55a98eb66b8a65e4cfd2b68c3a8f6c09ee981eca332a283f877",
+      "keys/flat_aggregation_n16/vk.bin": "745561d62124fe4103daee00a0b94f70b532debb59fd1c0b0105931b46ec9228",
+      "keys/flat_aggregation_n2/pk.bin": "2872a9bf3c023f756aae32281ca558a8301d26f5826b6f43a2b8ff2a452063e9",
+      "keys/flat_aggregation_n2/vk.bin": "003a4963ea6b4a935048cde5b2191c2f0eac33021ac5d5815cf821eea01c8dae",
+      "keys/flat_aggregation_n32/pk.bin": "2c34679ed63be0c4061c5d862e9454424ebe1ea4da536edf198b2794f458d23c",
+      "keys/flat_aggregation_n32/vk.bin": "32fa738a907740afc1f25b42015108a87129cb8133ca4871f04f32ccecf02671",
+      "keys/flat_aggregation_n4/pk.bin": "a758497292920eba9487a6d7f92b7b990be3b0ed1929670902ed4b3f371ba778",
+      "keys/flat_aggregation_n4/vk.bin": "1c94b6c572d9e3b28eb69e613dc28aec9d825ccb21a8a94eb28417fbae58a23e",
+      "keys/flat_aggregation_n64/pk.bin": "5953df66bd272c25f9691a695c533ebd5a950229cbfc90688065185705ec02ff",
+      "keys/flat_aggregation_n64/vk.bin": "9473cde72a3a1dd53abefb63c22a57ef28fcb6ad4295dcaad4d6860b742c5d57",
+      "keys/flat_aggregation_n8/pk.bin": "1a5ec2546b626cc9356c675e48bcf7e1480cede13620575d52d0746f5d6c375f",
+      "keys/flat_aggregation_n8/vk.bin": "a4943f1884ac935cd92fb9460759978223d4934229664befa8fd488c6167ab7d"
+    },
+    "single_party_test_setup": true,
+    "stats": {
+      "demo_tribute": {
+        "dyadic_size": 65536,
+        "gates": 46088
+      },
+      "emit_mint": {
+        "dyadic_size": 16384,
+        "gates": 9123
+      },
+      "flat_aggregation_n1": {
+        "dyadic_size": 65536,
+        "gates": 46088
+      },
+      "flat_aggregation_n16": {
+        "dyadic_size": 131072,
+        "gates": 107624
+      },
+      "flat_aggregation_n2": {
+        "dyadic_size": 65536,
+        "gates": 46088
+      },
+      "flat_aggregation_n32": {
+        "dyadic_size": 262144,
+        "gates": 212352
+      },
+      "flat_aggregation_n4": {
+        "dyadic_size": 65536,
+        "gates": 46088
+      },
+      "flat_aggregation_n64": {
+        "dyadic_size": 524288,
+        "gates": 421808
+      },
+      "flat_aggregation_n8": {
+        "dyadic_size": 65536,
+        "gates": 55260
+      }
+    },
+    "threads": 18,
+    "timings": [
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 102396833,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 79366042,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 19761292,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 106328750,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 68571125,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 4580458,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 110892834,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 77766166,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 6856666,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 130100125,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 103455958,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 12396250,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 170590125,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 129040583,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 22825375,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 256725959,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 184108333,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 42852125,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 443788333,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 348363584,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 92391500,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 1055441125,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 548872791,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 179420750,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 264607708,
+        "sample": 0,
+        "stage": "compile_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 27785291,
+        "sample": 0,
+        "stage": "vk_derive_subprocess"
+      },
+      {
+        "backend": "noir_bb",
+        "circuit": "emit_mint",
+        "elapsed_ns": 1719333,
+        "sample": 0,
+        "stage": "circuit_stats"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 176951917,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 7527791,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 104667,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "demo_tribute",
+        "elapsed_ns": 199825542,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 110118583,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 5364792,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 68709,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n1",
+        "elapsed_ns": 121997417,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 212776667,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 10458750,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 104709,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n2",
+        "elapsed_ns": 231711958,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 391150875,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 23981250,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 105125,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n4",
+        "elapsed_ns": 424765584,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 785360750,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 76140208,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 155292,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n8",
+        "elapsed_ns": 877315917,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1620671167,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 158253666,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 196958,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n16",
+        "elapsed_ns": 1815687500,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 3030887500,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 318980208,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 264625,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n32",
+        "elapsed_ns": 3412701709,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 6165125333,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 707884875,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 191250,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "flat_aggregation_n64",
+        "elapsed_ns": 6991219500,
+        "sample": 0,
+        "stage": "process_wall"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 108374166,
+        "sample": 0,
+        "stage": "setup"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 7159958,
+        "sample": 0,
+        "stage": "pk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 95500,
+        "sample": 0,
+        "stage": "vk_write"
+      },
+      {
+        "backend": "groth16",
+        "circuit": "emit_mint",
+        "elapsed_ns": 130557417,
+        "sample": 0,
+        "stage": "process_wall"
+      }
+    ],
+    "versions": {
+      "bb": "5.0.0-nightly.20260522",
+      "nargo": "nargo version = 1.0.0-beta.22\nnoirc version = 1.0.0-beta.22+c57152f91260ecdb9faad4efc20abb14b6d2ece7\n(git version hash: c57152f91260ecdb9faad4efc20abb14b6d2ece7, is dirty: false)",
+      "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+    }
+  },
+  "profile": {
+    "debug": false,
+    "name": "release",
+    "opt_level": 3,
+    "overflow_checks": false
+  },
+  "ram_bytes": 51539607552,
+  "requested_threads": 18,
+  "sampling": "one fresh sequential child per case/backend/sample; alternate backend order; no discarded warmup; OS filesystem caches unmanaged; verification after proving",
+  "settings": {
+    "BB_SLOW_LOW_MEMORY": "0",
+    "BB_STORAGE_BUDGET": "unset",
+    "disable_zk": false,
+    "ipa_accumulation": false,
+    "optimized_solidity_verifier": false,
+    "oracle_hash_type": "keccak"
+  },
+  "setup_and_proof_rng": "StdRng::from_entropy (OS entropy); deterministic RNG only for public fixtures",
+  "source_sha256": {
+    "Cargo.lock": "0b89890bedb2a394ea19ad558117349fca8aaaf2fcb8b79944794b6c41179fce",
+    "Cargo.toml": "37065fd18f4a97522d0ffcd984a0fb000d95962fddde5353d645c5759884c299",
+    "crates/outbe-protocol-derive/Cargo.toml": "cf007827c75e18d0edc919eec9547419e519d5d51d34d9497cadf2c614b43cef",
+    "crates/outbe-protocol-derive/src/lib.rs": "bde2432119d59a0b21cb3719b8f7a46fdc3fe741a22c4e2f6063adabb181f768",
+    "crates/outbe-protocol/Cargo.toml": "af7708f9bd48c577117d4f611c627d48f2e0b5e1970ec7a97d617d8fa3c8929f",
+    "crates/outbe-protocol/src/codec.rs": "4b381f03f7d72b97e5fe259f45b4a32bf8336d27f187037b94153bc536b6390f",
+    "crates/outbe-protocol/src/error.rs": "7def392de3097608b486585e45386cc4311500a35ad436203df084bacd51a8e3",
+    "crates/outbe-protocol/src/lib.rs": "40b8c5ab61fc7464e716e825d46085f8c151605341efe7bfb8e43758a57cb0cd",
+    "crates/outbe-protocol/src/primitive/curve.rs": "a3b5ef1d8f86e86f02bc0e210d5c26f972717a035d923556af8d00403dac9444",
+    "crates/outbe-protocol/src/primitive/exchange.rs": "bace888ed91d977267cc7125f7302be7a61c3bc413f948b32fe19467ba04f23d",
+    "crates/outbe-protocol/src/primitive/hash.rs": "74970f20f5fad0eab879b5fea726726d84f25be27d2dead5457fe3989da10418",
+    "crates/outbe-protocol/src/primitive/kdf.rs": "d4b7cd4e802ca7d64ec0ed40f73fa60c5d2ef88ae32510e64708310e3547d0f1",
+    "crates/outbe-protocol/src/primitive/mod.rs": "222ba311af9fb2607c77667a60dd52bb535a4c8df979b154b5ae1f097e7a3068",
+    "crates/outbe-protocol/src/primitive/signature.rs": "e6c33858d9b93f71c027bb03b21b39eeaf26bdbe6266f22490f1e2d1935c8449",
+    "crates/outbe-protocol/src/protocol/entity.rs": "1fb865c6b76f4b9c043ca401a56b935ddee0d2e1ed0084c1223f82357de1eb20",
+    "crates/outbe-protocol/src/protocol/imt.rs": "0f2455c82bafeb6847bd480b8f8afa4271a4198d339cd5b4d6cab6232d216b70",
+    "crates/outbe-protocol/src/protocol/key.rs": "3dd71963581c0f2e9a8c3328d730a063a6bde0916de4977b99bde65d2d10f922",
+    "crates/outbe-protocol/src/protocol/mod.rs": "97b1544837a1c2342a0cb31a8e4746df54f23e14e16ee0c6cea7e021b7d5a792",
+    "crates/outbe-protocol/src/protocol/shielded_pool.rs": "1b790c21cf259c193a1fdb92af643c8d6e274da6b849e430795d963a8566b43b",
+    "crates/outbe-protocol/src/protocol/zk.rs": "17d4d268bcaa00775f6242d33506d6ed405b156c663f0ab097ffec497c24ae8b",
+    "crates/outbe-protocol/src/protocol/zkproof.rs": "0fcb2c205b1a2436fbe0288f5980b1997a65c0c7de52cf0a4e5cc6f95d45d314",
+    "crates/outbe-protocol/tests/codec.rs": "6664ee11c56156d27fda78cf1a65655fb7dd39a2840ebf7880f6cbd662c3ba3e",
+    "crates/outbe-protocol/tests/limbed.rs": "19090d5a89039e151dad8eafbfdf779c86593373d2c33845b0a11a7a6727bf57",
+    "crates/outbe-protocol/tests/protocol.rs": "70e803ae1e744de6b9dc0ade359c0b86cccbf475daca93d4ebc7bc690fa60833",
+    "crates/outbe-protocol/tests/sorted_set.rs": "f98e78bbe256a5e43bbb6de5b1a1819b9ef20a49345ee48748182fdb004b61ad",
+    "crates/outbe-zk-backend/Cargo.toml": "a5528cd668fd0b74db3f496dbd22323479c370872b2b8489d6a74dcbf9540ba8",
+    "crates/outbe-zk-backend/benches/proving.rs": "31c3ee454a6018955adf1bcdaad5379b5889f66019c046da6d236e6827ca64ee",
+    "crates/outbe-zk-backend/src/barretenberg/mod.rs": "f2ae2be5019ecb9b9cec25eafb7daa6a8f14097446f8c5e8f2dc404d09883937",
+    "crates/outbe-zk-backend/src/barretenberg/srs.rs": "bab24582376542973ba461c211d65840058a79e3bdcaa7a04a56fcb0dda3f434",
+    "crates/outbe-zk-backend/src/lib.rs": "dc13cf25af720ef21b084c74361f029987537a69e0888448f0348814db15d530",
+    "crates/outbe-zk-backend/src/witness.rs": "0b6cf470d9c191dd8d6027b00de4aead44cfafe11a0b88e739f13a506e7dbe41",
+    "crates/outbe-zk-backend/tests/barretenberg.rs": "07c9d0cacaaefb75fb31d9e1a522ea490330794ec7df8b4070402d3ac91be568",
+    "crates/outbe-zk-backend/tests/common/mod.rs": "a97c831f2057aa562a59265141db7f7d5791e27f0c4fd815704efb2a50209556",
+    "crates/outbe-zk-backend/tests/crs_init.rs": "a38257c69d8128757901ebbc1fa303034a32b210ede4b57e52f470f28df29174",
+    "crates/outbe-zk-backend/tests/emit_mint.rs": "5f1aaf42369d7a217ff6680988b2ec24b53e529b31218914a25817815cddfdf2",
+    "crates/outbe-zk-backend/tests/paynote.rs": "227b01594f07f0796d31a6c2a656dc37423e492bfee3f1e1bf3a6657c7d21af8",
+    "crates/outbe-zk-backend/tests/paynote_merge.rs": "91c812e13c0f68d1cf9547bc3960c6ac8cb58ddd39ac97acb72c4d6a56253e30",
+    "crates/outbe-zk-backend/tests/solve.rs": "56ce76e1529fb76bbb6b6876472717387bd0aa5f865c18192e1925105565f98f",
+    "crates/outbe-zk-backend/tests/srs_pins.rs": "9c35c38a4c239ed04d623397796fff90b98394d91fb6e080b5b0e41941d197ad",
+    "crates/outbe-zk-canonical/Cargo.toml": "d7f4101dc1d4544a7da96f1b0c0a66a92896fc7bc6ed66180a5e03518caafc34",
+    "crates/outbe-zk-canonical/build.rs": "a171740268bee81b887f8150d1bb4de9c6becf17e3f64196a4180478b84ed78d",
+    "crates/outbe-zk-canonical/circuits/manifest.toml": "c5b4198847400f68353015f48e9771e30b825f74ff04f6d0a84df48777977256",
+    "crates/outbe-zk-canonical/l2/57005/tribute/Nargo.toml": "506735e371010e38d854e3fee05969f19bac88a1781911eff61f8eb41236bfd9",
+    "crates/outbe-zk-canonical/l2/57005/tribute/src/main.nr": "cebcbc3fe98299ba25013344db8fe4453d72c668daf495b965a3ec3b1a7815dc",
+    "crates/outbe-zk-canonical/l2/9900501/tribute/Nargo.toml": "2af62bef3a89ec16ea44fa63b48c7493bc1af824eb811db2bd92cf501a6293f6",
+    "crates/outbe-zk-canonical/l2/9900501/tribute/src/main.nr": "c49cc9642babfb1ba648fca41336cf1fa4b382bb54ad5ff35b57038b00cd6441",
+    "crates/outbe-zk-canonical/noir/emit_mint/Nargo.toml": "e4c227d90b53f5aeae420db4cec38aeea8a9c5cfb69828dcd3b653aecfdb3f58",
+    "crates/outbe-zk-canonical/noir/emit_mint/src/emit.nr": "5ee59ed6e0a17307d34d24db532999730855605548fb3f6efcc01fb302f3891e",
+    "crates/outbe-zk-canonical/noir/emit_mint/src/main.nr": "794f240b48d7016772c33b499a9c8a9e1c48eb07e6927318ff77aba26ca76909",
+    "crates/outbe-zk-canonical/noir/emit_mint/src/tests.nr": "f0a22902423a15c58d871b0cfa945bd89d0039c514dfb1f15a50d016668446e6",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/Nargo.toml": "8aa5c24abe1b9a4d408c8591b457ee2c8686183bd02e37f6933e2f47d0d94330",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/hash.nr": "7c860b8ade553a4faeb5570d537b826ca165deaf8b7452f483614876557202d3",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/lib.nr": "0cc35e25a52ebe5c4f2f169f20c08de136c9431e530713441ffefeb1c31f0b63",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/merkle_tree.nr": "f5c66bdd692fab19fe4df0700e8396849d32b39429cbaacaec325cd8501134a1",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/ownership.nr": "3bddd55db2d875143f1c4cd6bb090144d2027f57868b6e45ac555d94e0f44de7",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/tags.nr": "fe573421cdfc7ef6d2c55e8f028b644ed8cfff703a6e34ab69b1653361c2f00f",
+    "crates/outbe-zk-canonical/noir/outbe-circuit-core/src/types.nr": "b80fa05e8a69f0e1c627fe977ed6ba050f793859de95e59d9c3582bd272185ac",
+    "crates/outbe-zk-canonical/noir/outbe-paynote-lib/Nargo.toml": "3c7429cdcf3581a49f080ccc6eef8e164e50af1eb1d0a0d576a824f530811320",
+    "crates/outbe-zk-canonical/noir/outbe-paynote-lib/src/lib.nr": "b7fa422bc68ae774548127291ffa5d9d8e83ade8c45d0cfc0eac1c7dc5333f6e",
+    "crates/outbe-zk-canonical/noir/ownership_proof/Nargo.toml": "623e46d2db5ea6a2d1307531966ec0b44cb7ef59b9dad04e249024449577ec0a",
+    "crates/outbe-zk-canonical/noir/ownership_proof/src/main.nr": "86f10c0e2a3501f137ce8974fad4876d672ee62dea47ac746317f65a7f5d354d",
+    "crates/outbe-zk-canonical/noir/paynote/Nargo.toml": "39b81dadbdb82c65d1a8cf971733024e07fae1f55a1dd7322530e8e5cd85598a",
+    "crates/outbe-zk-canonical/noir/paynote/src/main.nr": "7a062a352c4d415b1c258130b732099636d713957a6583d817ef0b702fefa49b",
+    "crates/outbe-zk-canonical/noir/paynote/src/tests.nr": "97abc24044c78c5b0a22f65ef14147950a9d6177d2c10ee4432897028cb8af76",
+    "crates/outbe-zk-canonical/noir/paynote_merge/Nargo.toml": "305f4b60e3e43e0f6c73b1df0227217ef9f7577513c73008024ec38185041b83",
+    "crates/outbe-zk-canonical/noir/paynote_merge/src/main.nr": "fb7c96077c0b875c4ed6fe73a65fb71e75ef9bdc472f2cde2ab3d05f60721951",
+    "crates/outbe-zk-canonical/noir/paynote_merge/src/tests.nr": "2787c31d4402d49e33611000654b0dd1e85e5304b05c773d498fa50711d6103f",
+    "crates/outbe-zk-canonical/src/demo_tribute.rs": "f7737b0202b6eb35b5c05d604b380358056738f86672a134595b47b93a669b01",
+    "crates/outbe-zk-canonical/src/emit_mint.rs": "22b6c0199d611a2768c9b05a7aa5757c32f816590603b3d2d3b1233343e58383",
+    "crates/outbe-zk-canonical/src/emit_mint/hash.rs": "4e1799344dc8927d18688da914015ddf6dbc37eea6948d4cc17a29c19bc7ff47",
+    "crates/outbe-zk-canonical/src/lib.rs": "0dfb2d5f2e6cbacecae10519447c5554716c29a7eb5edb51744d808b063afeb9",
+    "crates/outbe-zk-canonical/src/ownership.rs": "ea07ff29cb7ac8d39b358e22f6b0e5fc8543b14389fa8919ba4b3c7ba9372165",
+    "crates/outbe-zk-canonical/src/paynote.rs": "15604539cdbca29ce1057f4a060201392156d4f1aa3e42a9f271eb99245451ba",
+    "crates/outbe-zk-canonical/src/paynote/hash.rs": "ead0fbd7068fa85facfe3e774a9b35bfafe3e2dabe1deb02f154121bb9342745",
+    "crates/outbe-zk-canonical/src/paynote_merge.rs": "cba0a973c48ad2415e61887e005189f348b7239c1dad28f8895340640184f415",
+    "crates/outbe-zk-canonical/tests/alloy_inputs.rs": "c058390d4a8cd423c40b9ac28b46aefc0c688fac2915f3f3e1228a28d247d7fc",
+    "crates/outbe-zk-canonical/tests/battery.rs": "1386ad315df2de3dcefa22d39da7ce6514999258809f6014971beeef6f97272d",
+    "experiments/groth16-tribute/Cargo.toml": "f26a541bf34ecdf999a8d5fa5bbcc49f3d4a594f1a1de063331bbbdd011cfb1c",
+    "experiments/groth16-tribute/src/circuit.rs": "40ee2d9ec9668b6b61236b8d9e45dd09618807943d09e115b73415daf375de41",
+    "experiments/groth16-tribute/src/emit.rs": "afe8ae73f00a0297619351df74982cb79c1021b383467fa78d06c97578acfd1b",
+    "experiments/groth16-tribute/src/main.rs": "570aa5150a13e9c23ecda036d0e550c2d99a53322c7ff1bb38ffa63cf6e6d576",
+    "experiments/groth16-tribute/src/noir.rs": "064a40e2e9787444a90a15daa7ff6f1d6b79fb31bb886ca71fdb6f7303a16e4d",
+    "experiments/groth16-tribute/src/poseidon2.rs": "2e6df7eb976f4ed29faf1f949656a5ced2eb710c2f25b566cf6b9a2d0d8b450d",
+    "experiments/groth16-tribute/src/poseidon2_constants.rs": "078925849e7926bb7556fb0f6e175b225aeffa17f8a87ac876dff8c20b6b52c1",
+    "mise.toml": "a2170dad43c0e19ad78b99ddfddb11250497a16dc618dc66718b0fb1db127bad",
+    "xtask/src/main.rs": "2c84be9ec02a0268e4a98e549d46af25f401a60441836bce0f77c11c21f135c5"
+  },
+  "srs": {
+    "path": "/Users/m5-vladimir/.bb-crs/bn254_g1.dat",
+    "points": 1048577,
+    "policy": "maximum prefix for all shapes, local only; backend SHA-256 pin enforced"
+  },
+  "stage_definitions": {
+    "acir_gunzip": "compressed ACIR to raw bb msgpack",
+    "artifact_base64": "bytecode base64 decode",
+    "artifact_read": "committed/recovered bytecode.b64 disk read",
+    "backend_init": "FfiBackend and API initialization",
+    "circuit_stats": "native bb circuit_stats including FFI packing",
+    "compile_subprocess": "pinned nargo compile including subprocess overhead",
+    "fixture": "shared deterministic circuit witnesses; native ownership signatures for Tribute/flat and native note/change hashes for Emit; actual inserted-leaf Merkle paths for Demo/Emit",
+    "pk_decode": "checked compressed PK decoding; bb N/A",
+    "pk_read": "stored compressed Groth16 PK disk read; bb N/A",
+    "pk_write": "Groth16 compressed PK serialization and disk write",
+    "process_wall": "parent-observed worker invocation wall time including /usr/bin/time wrapper, startup, log setup and shutdown; shown with process memory, not core timing",
+    "program_decode": "ACIR Program deserialize",
+    "proof_decode": "Groth16 checked compressed deserialize; bb reconstruct 32-byte vectors (native validation in verify)",
+    "proof_encode": "Groth16 compressed canonical serialize; bb concatenate 32-byte fields",
+    "prove": "Groth16 fresh blinding plus matrix QAP/FFT/MSMs; bb circuit_prove including required FFI packing",
+    "setup": "Groth16 random parameters, synthesis and QAP setup, once per shape, single-party experimental",
+    "srs_init": "maximum-prefix local SRS loader/checksum/native initialization",
+    "verify": "decoded fresh proof against expected public vector; bb includes FFI packing/native VK preprocessing",
+    "vk_decode": "checked Groth16 compressed decoding; bb included in verify",
+    "vk_derive_subprocess": "pinned bb write_vk -t evm-no-zk including subprocess overhead",
+    "vk_prepare": "Groth16 prepare_verifying_key; bb N/A, native preprocessing included in verify",
+    "vk_read": "stored VK disk read",
+    "vk_write": "Groth16 compressed VK serialization and disk write",
+    "witness": "Groth16 constrained synthesis, finalize, matrices and full assignment; Noir initial map, ACVM solve/finalize and public parity",
+    "witness_encode": "Noir WitnessStack serialize then gunzip to raw msgpack; Groth16 N/A"
+  },
+  "status": "complete",
+  "thread_environment": [
+    "RAYON_NUM_THREADS",
+    "HARDWARE_CONCURRENCY"
+  ],
+  "versions": {
+    "bb": "5.0.0-nightly.20260522",
+    "nargo": "nargo version = 1.0.0-beta.22\nnoirc version = 1.0.0-beta.22+c57152f91260ecdb9faad4efc20abb14b6d2ece7\n(git version hash: c57152f91260ecdb9faad4efc20abb14b6d2ece7, is dirty: false)",
+    "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+  }
+}

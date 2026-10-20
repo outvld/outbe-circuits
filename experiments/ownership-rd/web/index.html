@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#174c42">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23174c42'/%3E%3Cpath d='m8 16 5 5 11-11' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+  <title>Ownership / локальная WASM-лаборатория</title>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">OUTBE · OWNERSHIP R&D</p>
+      <h1>Доказательство.<br>На этом устройстве.</h1>
+      <p class="intro">Реальные Groth16, Nova и Noir / UltraHonk в WebAssembly, в отдельном Web Worker. По умолчанию всё локально: сервер раздаёт файлы. Только при явном включении backend wrapping отправляются доказательство и public inputs, но не приватный witness.</p>
+      <span class="badge">Один поток · SharedArrayBuffer не обязателен</span>
+    </header>
+
+    <aside class="warning" aria-labelledby="warning-title">
+      <h2 id="warning-title">Только исследовательский стенд</h2>
+      <p>Примеры — публичные детерминированные fixtures: их приватные ключи известны. Groth16 использует экспериментальную одностороннюю trusted setup, а не производственную церемонию. Подпись Poseidon2 — новая, неаудированная и несовместимая с production. Не используйте реальные секреты или средства.</p>
+      <p id="manifest-warning"></p>
+    </aside>
+
+    <section class="panel" aria-labelledby="settings-title">
+      <div class="section-heading"><h2 id="settings-title">Параметры запуска</h2><span class="step">01 / CONFIG</span></div>
+      <p>Nova — система рекурсивных доказательств (IVC): здесь она последовательно объединяет ownership-шаги по слотам и завершает их доказательством Spartan IPA. Это не язык программирования и не EVM-формат Groth16.</p>
+      <p>Noir — язык и инструментарий описания схем, а не отдельная система доказательств. Здесь Noir ACVM вычисляет witness, а barretenberg (bb) создаёт и проверяет UltraHonk-доказательство локально. Доступны только восстановленные Canonical-схемы; экспериментальная Poseidon2-подпись поддерживается лишь Rust-движками Groth16 / Nova.</p>
+      <form id="run-form">
+        <fieldset id="settings" disabled>
+          <legend class="sr-only">Настройки измерений</legend>
+          <div class="form-grid">
+            <label>Схема<select id="circuit" name="circuit" aria-describedby="circuit-note"><option value="flat_aggregation">Flat aggregation · ownership</option><option value="demo_tribute">Demo Tribute (full_proof)</option></select></label>
+            <label>Движок<select id="engine" name="engine" aria-describedby="engine-note"><option value="groth16">Groth16 · BN254</option><option value="nova">Nova · Spartan IPA</option><option value="noir_bb">Noir · UltraHonk / bb</option></select></label>
+            <label>Подпись<select id="scheme" name="scheme" aria-describedby="scheme-note"><option value="canonical">Canonical · Pedersen / Blake2s</option><option value="poseidon2">Poseidon2 · экспериментальная</option></select></label>
+            <label>Количество слотов<select id="capacity" name="capacity" aria-describedby="capacity-note"></select></label>
+            <label>Независимых запусков<input id="samples" name="samples" type="number" min="1" step="1" value="3" required inputmode="numeric"></label>
+            <label class="wide">Режим<select id="mode" name="mode" aria-describedby="mode-note"><option value="warm">Warm — отдельная подготовка, повторное использование сессии</option><option value="cold">Cold benchmark — подготовка заново для каждого доказательства</option></select></label>
+          </div>
+          <p id="circuit-note" class="muted" aria-live="polite">Flat aggregation проверяет ownership по слотам. Demo Tribute (full_proof) дополнительно проверяет 32 уровня Merkle inclusion и четыре public values: derived_owner, nft_hash, binding_hash, merkle_root; это не flat n=1.</p>
+          <p id="engine-note" class="muted" aria-live="polite">Groth16 и Noir / UltraHonk доступны для обеих схем. Nova поддерживает только ownership-шаги Flat aggregation.</p>
+          <p id="scheme-note" class="muted" aria-live="polite">Groth16 поддерживает Canonical и экспериментальную Poseidon2-подпись для обеих схем. Noir / UltraHonk — только Canonical.</p>
+          <p id="capacity-note" class="muted">Доступные размеры берутся из manifest выбранного движка. Nova выполняет по одному ownership-шагу на слот; Noir использует отдельную схему для каждого размера.</p>
+          <p id="mode-note" class="muted">Warm: сначала «Подготовить WASM», затем «Создать и проверить». Загрузка, SHA-256 и pk_decode выполняются при подготовке, а сессия сохраняется между сериями. Cold benchmark намеренно повторяет подготовку для каждого доказательства и не очищает HTTP/дисковый кэш. Прогрев не отбрасывается.</p>
+          <label class="consent"><input id="wrap" type="checkbox" disabled aria-describedby="wrap-note">Demo Tribute + Noir: отправить UltraHonk proof и public inputs на backend для Groth16 wrapping</label>
+          <p id="wrap-note" class="warning compact">Опционально. Single-party unaudited trusted setup — не production. Backend загружает проверенные setup provenance, R1CS, proving key и VK один раз до готовности сервера. При включении опции startup-метрики появляются отдельно, ещё до proving. Backend реально проверяет UltraHonk внутри схемы и создаёт BN254 Groth16; отдельный verification call использует тот же resident VK. Cold / Warm управляют только CLIENT-сессией: для нового измерения startup перезапустите backend. Статический сервер без API не поддерживает wrapping. Отмена fetch прекращает ожидание клиентом, но уже начатая native computation завершается на сервере; до её завершения новый запрос получает busy (HTTP 409). Автоматических повторов нет. Локальная отмена по-прежнему останавливает Worker.</p>
+          <p id="large-warning" class="warning compact" hidden>Большая схема: особенно 64 слота могут потребовать много памяти и времени. Мобильный браузер может закрыть Worker или вкладку без сообщения. Начните с 1 слота; отмена освобождает Worker, но не гарантирует немедленное освобождение памяти браузером.</p>
+          <label class="consent"><input id="consent" type="checkbox" required>Я понимаю: это публичные тестовые данные и экспериментальная криптография.</label>
+        </fieldset>
+        <div id="asset-summary" class="asset-summary" aria-live="polite">Читаем manifest и размеры артефактов…</div>
+        <p id="preparation-state" class="muted" role="status">WASM ещё не подготовлен.</p>
+        <div class="actions"><button id="prepare" type="button" disabled>Подготовить WASM</button><button id="start" type="submit" disabled>Создать и проверить</button><button id="release" type="button" class="secondary" disabled>Освободить память</button><button id="cancel" type="button" class="secondary" disabled>Отменить</button><button id="reload" type="button" class="secondary" hidden>Повторить загрузку manifest</button></div>
+        <p class="muted">Изменение схемы, движка, подписи или числа слотов сбрасывает подготовку. Число запусков и опцию backend wrapping можно менять без повторного декодирования. «Освободить память» останавливает Worker; немедленное освобождение физической RAM браузером не гарантируется. Это подготовка клиентского WASM, не trusted setup и не загрузка ключей backend.</p>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="progress-title">
+      <div class="section-heading"><h2 id="progress-title">Ход выполнения</h2><span class="step">02 / LOCAL</span></div>
+      <p id="status" role="status" aria-live="polite">Подготовка интерфейса…</p>
+      <progress id="progress" max="3" value="0" aria-label="Завершённые независимые запуски"></progress>
+      <p id="progress-detail" class="muted">Во время вычислений движка показывается этап, а не выдуманный процент.</p>
+      <p id="error" class="error" role="alert" hidden></p>
+    </section>
+
+    <section class="panel" aria-labelledby="results-title">
+      <div class="section-heading"><h2 id="results-title">Каждое наблюдение</h2><span class="step">03 / EVIDENCE</span></div>
+      <p>Без средних и медиан. Время этапов движка не включает первоначальную загрузку модулей, скачивание и SHA-256 артефактов. Nova «folding» включает синтез каждого шага; это не чистое время proving. Для Noir этап ACVM witness включает внутреннюю десериализацию программы, а verify — декодирование сохранённого VK. Сохранённый proving key для Noir не загружается: используется SRS.</p>
+      <p class="muted">Клиентская верификация выполняется после proving в той же сессии. Опциональный backend выполняет wrap и отдельный verify с resident ключами, без повторной загрузки setup в proving path. Startup отображается и экспортируется один раз на initialization ID; запросы ссылаются на него. Внешние wall-интервалы включают внутренние этапы: складывать их нельзя. Native process lifetime peak RSS — максимум за всю жизнь серверного процесса, не пик отдельного proof и не дельта; startup RSS — неизменный снимок этого максимума при готовности. Он показывается отдельно от ёмкостей WASM; native на настольном компьютере — не результат мобильного WASM. Compressed gnark Groth16 содержит commitment extensions: это не предполагаемые 128 байт и не стандартный EVM-формат.</p>
+      <div class="actions"><button id="json-export" type="button" class="secondary" disabled>Скачать JSON</button><button id="csv-export" type="button" class="secondary" disabled>Скачать CSV</button></div>
+      <div id="results" class="results"><p class="muted">Наблюдений пока нет. Каждый завершённый запуск останется доступен, даже если следующий будет отменён или завершится ошибкой.</p></div>
+    </section>
+
+    <details class="panel">
+      <summary>Среда, память и запуск на телефоне</summary>
+      <p>Все браузерные вычисления однопоточные. Число логических процессоров ниже — информация браузера, а не количество потоков proving.</p>
+      <p>Память WASM — ёмкость линейной памяти, измеренная до/после операций. У Groth16 / Nova это Rust-модуль; у Noir показывается сумма ёмкостей Rust fixture, Noir ACVM, Noir ABI и BB с отдельными снимками каждого модуля. Сразу после init измерен только Rust fixture, после загрузки Noir — все четыре модуля. Это <strong>не RSS, не физическая память и не пиковое потребление</strong>. Буферы JS и накладные расходы runtime/браузера в неё не входят. Браузер не предоставляет native RSS.</p>
+      <pre id="environment">Собираем сведения…</pre>
+      <h3>Как открыть на другом устройстве</h3>
+      <p>Раздавайте весь каталог приложения как статические файлы по HTTPS; для модульных JS и WASM нужны корректные MIME-типы (<code>text/javascript</code>, <code>application/wasm</code>). Папки <code>pkg/</code>, <code>vendor/</code> и <code>assets/</code> должны находиться рядом с этой страницей. Noir не скачивает SRS из внешней сети: все runtime-артефакты берутся из локального manifest. SharedArrayBuffer не обязателен; при cross-origin isolation выбирается совместимый вариант BB WASM, вычисления остаются однопоточными.</p>
+      <p>На компьютере откройте <code>http://localhost:8080</code>, на телефоне в той же доверенной Wi-Fi сети — <code>http://IP-компьютера:8080</code>. SHA-256 выполняет сам WASM; для случайности используется криптографический <code>getRandomValues</code>, доступный в современных браузерах и без HTTPS. <code>file://</code> не подходит. Если браузер блокирует API, используйте HTTPS. Firewall должен разрешать локальный доступ.</p>
+      <p>HTTP допустим здесь только для публичных тестовых fixtures, без реальных секретов: он не защищает загружаемый код и manifest от сетевой подмены. Для недоверенной сети используйте HTTPS. Длина и SHA-256 каждого артефакта проверяются перед использованием, но это согласованность с manifest, а не независимая подпись издателя.</p>
+    </details>
+    <footer>OWNERSHIP R&D / Локальные измерения, а не production-продукт.</footer>
+  </main>
+</body>
+</html>

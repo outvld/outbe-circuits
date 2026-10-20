@@ -1,0 +1,149 @@
+{
+  "browser": "151.0.7922.34",
+  "physical_phone": false,
+  "environment": "Desktop Chromium with mobile viewport over LAN HTTP; not phone performance data",
+  "backend": "Noir/ACVM + barretenberg UltraHonk WASM",
+  "versions": {
+    "noir": "1.0.0-beta.22",
+    "bb": "5.0.0-nightly.20260522"
+  },
+  "settings": {
+    "ipaAccumulation": false,
+    "oracleHashType": "keccak",
+    "disableZk": false,
+    "optimizedSolidityVerifier": false
+  },
+  "capacities_verified": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "scheme": "canonical",
+  "rejection_checks": {
+    "engine": "noir_bb",
+    "scheme": "canonical",
+    "capacity": 1,
+    "sample": 1,
+    "passed": true,
+    "checks": [
+      {
+        "name": "valid_proof",
+        "rejected": false,
+        "verified": true
+      },
+      {
+        "name": "changed_public_0",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "changed_public_1",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "changed_public_2",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "public_arity_short",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier public-input arity/field width mismatch"
+      },
+      {
+        "name": "public_arity_long",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier public-input arity/field width mismatch"
+      },
+      {
+        "name": "truncated_proof",
+        "rejected": true,
+        "outcome": "input_boundary_rejection",
+        "message": "Noir verifier proof length/field width mismatch"
+      },
+      {
+        "name": "damaged_proof",
+        "rejected": true,
+        "outcome": "verified_false"
+      },
+      {
+        "name": "bad_signature",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "bad_owner",
+        "rejected": true,
+        "outcome": "acvm_constraint_failure",
+        "message": "Assertion failed"
+      },
+      {
+        "name": "valid_after_rejections",
+        "rejected": false,
+        "verified": true
+      }
+    ],
+    "statement_digest": "2cc72a8e19e4821858e613562c788f9494f3a22c751772fd01c213cd01cceaf3",
+    "witness_digest": "b44118dab6772cb83abcfae9211451694ab940b47f2c69f63c2a3d28aeee2fc4"
+  },
+  "cold_warm": true,
+  "cancelled_series_preserved_samples": 1,
+  "cancellation_status": "Отменено. Сохранено завершённых запусков: 1.",
+  "recovery_verified": true,
+  "existing_groth16_nova_regressions_verified": true,
+  "layout_checks": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "overflow": false
+    }
+  ],
+  "memory": "Actual capacity sum of Rust fixture, Noir ACVM, Noir ABI and BB WASM memories, with components; not RSS or a physical peak",
+  "build": {
+    "versions": {
+      "noir": "1.0.0-beta.22",
+      "bb": "5.0.0-nightly.20260522"
+    },
+    "package_lock_sha256": "d4b006eba88b817bb442342dd8cb41768677cc3690b56b9106994d928f9ae884",
+    "bundle_sha256": "67df71060cfbe52c78dc1fea9a5c3b4b230a0405c66607b8ffd5bc3529d25e78",
+    "source_sha256": {
+      "web/noir.js": "83f12277ca60ceda8898b178a87372dcdc0ee01ad21796b5a72ea2a328383d19",
+      "web/worker.js": "d84eb3cf874cdf719e3beb95cb9ec86db83a9e3fbbba0e7de149db7e6abb648b",
+      "web/app.js": "4094b612339329c3e6587881a7a0465cc7b135c497df7622d9ff32c5ff280d5a",
+      "web/index.html": "bfbada2041d6ad339262436859dcc89fbc50da772244104e1c5888f86edf77a6",
+      "build-noir.mjs": "987a93529e6138962d26b27fc67d2a282c826d1980c377c4c1d472d33b1850b5",
+      "src/wasm.rs": "53e41d85068d8a2825e9f5f8c409e8165eb43424af96a19e58f00b2d985c68d1"
+    },
+    "historical_preparation": "target/groth16-tribute-3",
+    "srs_points": 1048577,
+    "settings": {
+      "ipaAccumulation": false,
+      "oracleHashType": "keccak",
+      "disableZk": false,
+      "optimizedSolidityVerifier": false
+    }
+  }
+}

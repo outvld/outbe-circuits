@@ -1,0 +1,633 @@
+{
+  "metadata": {
+    "available": true,
+    "backend": "native-go-gnark",
+    "cancellation_policy": "client cancellation stops waiting; active native computation finishes before the server accepts another request",
+    "circuit": "demo_tribute",
+    "initialization": {
+      "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+      "started_at": "2026-10-19T18:19:02.518512Z",
+      "finished_at": "2026-10-19T18:20:21.56827Z",
+      "prover_loaded": true,
+      "timings_ms": {
+        "load_setup_provenance": 0.273,
+        "load_verifying_key": 0.865959,
+        "load_proving_artifacts": 79048.33325
+      },
+      "wall_ms": 79049.500459,
+      "process_lifetime_peak_rss_bytes": 9345449984
+    },
+    "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+    "process_policy": "resident artifacts initialized once at server startup; one native request at a time",
+    "setup_provenance": {
+      "circuit": "demo_tribute",
+      "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+      "inner_proof_system": "ultrahonk-keccak",
+      "noir_version": "1.0.0-beta.22",
+      "barretenberg_version": "5.0.0-nightly.20260522",
+      "disable_zk": false,
+      "ipa_accumulation": false,
+      "optimizedSolidityVerifier": false,
+      "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+      "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+      "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+      "outer_curve": "bn254",
+      "setup_kind": "single-party-experimental-not-production",
+      "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+      "created_utc": "2026-10-19T16:38:54.646696Z",
+      "go_version": "go1.27.2",
+      "structural_counts": {
+        "constraints": 13740642,
+        "internal_variables": 16419365,
+        "secret_variables": 448,
+        "public_inputs": 4,
+        "groth16_commitment_extensions": 1
+      },
+      "artifact_sha256": {
+        "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+        "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+        "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+      },
+      "setup_timings_ms": {
+        "constraint_compile": 28011.148958,
+        "groth16_setup": 426739.337417
+      }
+    }
+  },
+  "key_path_unavailable_during_requests": true,
+  "observations": [
+    {
+      "sample": 1,
+      "wrap": {
+        "status": 200,
+        "wall_ms": 14340.095708001405,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x1cba3053d63f5e3caca303a0b20e1d3cd97ed0f56f9a4596dbc6d331f929f0d9",
+            "0x0cfcb66804506451b9fd4af61b59d5206044ee28695182378d9c9e5e7cfd681b",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x22e3ec4275095a34e41e16df661bd81f8c8699092be4c8bfb36f8fd006e15fd1"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "inner_proof_sha256": "66b7ab2bdc638538f3d2e295c815c2b24285a8a149d241bd4116a43c0de72405",
+          "statement_sha256": "553f5c6bb93eb8d0c6394f4060eabcf3299ae5a1a3b82139cddea97ade1cadad",
+          "groth16_proof_hex": "0xc5d595a3c207450fa03ff862a2a6fe7ee8b453fb4ed4025eeadaedc78f877a4ecf504ded902c78f0bb05bd5f4100e3d16feeca3b1d1cf0410fc42eeaf1c718960b7e50cbcccfdf2b74f4c32a7676116f860f5479552c4983101250eb46990115a66aff16394f7c71b938c7ccf04bdf4a0113f241b5c58038f63887b1a224ca9d00000001a0fc5dc95181615de8ea33bebefbe78d0ea5e33316e7d55962f9729b94fb52828388ec91c60ec56fce4063e21df069c5ea91db8dda640df6f217d43b2faffac5",
+          "groth16_proof_sha256": "e2e4cf2e458a92f91599257a4ad7a0e6a5aae4b51ae66bfe7d5401ea22405543",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "constraint_solve_and_groth16_prove": 14336.805375,
+            "groth16_verify": 1.40175,
+            "parse_inner_proof": 0.241459,
+            "witness_encoding": 0.691209
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 13693927424,
+          "request_wall_ms": 14339.337042
+        }
+      },
+      "verify": {
+        "status": 200,
+        "wall_ms": 1.834332998842001,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x1cba3053d63f5e3caca303a0b20e1d3cd97ed0f56f9a4596dbc6d331f929f0d9",
+            "0x0cfcb66804506451b9fd4af61b59d5206044ee28695182378d9c9e5e7cfd681b",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x22e3ec4275095a34e41e16df661bd81f8c8699092be4c8bfb36f8fd006e15fd1"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "statement_sha256": "553f5c6bb93eb8d0c6394f4060eabcf3299ae5a1a3b82139cddea97ade1cadad",
+          "groth16_proof_hex": "0xc5d595a3c207450fa03ff862a2a6fe7ee8b453fb4ed4025eeadaedc78f877a4ecf504ded902c78f0bb05bd5f4100e3d16feeca3b1d1cf0410fc42eeaf1c718960b7e50cbcccfdf2b74f4c32a7676116f860f5479552c4983101250eb46990115a66aff16394f7c71b938c7ccf04bdf4a0113f241b5c58038f63887b1a224ca9d00000001a0fc5dc95181615de8ea33bebefbe78d0ea5e33316e7d55962f9729b94fb52828388ec91c60ec56fce4063e21df069c5ea91db8dda640df6f217d43b2faffac5",
+          "groth16_proof_sha256": "e2e4cf2e458a92f91599257a4ad7a0e6a5aae4b51ae66bfe7d5401ea22405543",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "groth16_verify": 1.422042
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 13693927424,
+          "request_wall_ms": 1.528792
+        }
+      }
+    },
+    {
+      "sample": 2,
+      "wrap": {
+        "status": 200,
+        "wall_ms": 14074.223749998957,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x30613957fe6c9767e9b74e5f8dd3f6b1fc95f990b9b1abfd3c0d83eddaf2c0b1",
+            "0x272c3b85c5118d7e199268e348e55dc6f7c2f97217f46c1d19f1c2abd9986234",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x063c3985797d9f42f110881f99debef0d7dfbd29d84f676ad96aacc9e9c8a9b7"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "inner_proof_sha256": "218606ef9ac175e52862ae098113d3c77803bc55e812e214d42cefd5e3adcbeb",
+          "statement_sha256": "306d3960c0e52c81e7e0193b862d2f42fefb87e5f52af10c5ffc96671e426d34",
+          "groth16_proof_hex": "0x845f9570836155e01e3a332672db299387a5f719e4b963ff4c22b46a3dc820a9c18dcd51ae9e6e108ae60db66b63e044fed6cc0810f6d2e3a002db10335174531819ac109cf859657942d99f370e184750dd9b50736c82b28918329c284b5789de642194b19dcb1dbdf51ed9640420ffdd6ad964c27963d12ab9664077c1ac8100000001acbc3e2d74c9948b74256f9b5fb29ddf531b75a59cb484e8d1810bba40907fc3d4fc71b6d57ba74d39f690e33468eb196ffe7c165107f63990068e027d18464a",
+          "groth16_proof_sha256": "4577b5d86fb423f9406ba3c469d25b608a79a9ab57db1c7000791953cef60f38",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "constraint_solve_and_groth16_prove": 14071.8965,
+            "groth16_verify": 1.417458,
+            "parse_inner_proof": 0.132417,
+            "witness_encoding": 0.284375
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 16789700608,
+          "request_wall_ms": 14073.816083
+        }
+      },
+      "verify": {
+        "status": 200,
+        "wall_ms": 1.78795799985528,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x30613957fe6c9767e9b74e5f8dd3f6b1fc95f990b9b1abfd3c0d83eddaf2c0b1",
+            "0x272c3b85c5118d7e199268e348e55dc6f7c2f97217f46c1d19f1c2abd9986234",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x063c3985797d9f42f110881f99debef0d7dfbd29d84f676ad96aacc9e9c8a9b7"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "statement_sha256": "306d3960c0e52c81e7e0193b862d2f42fefb87e5f52af10c5ffc96671e426d34",
+          "groth16_proof_hex": "0x845f9570836155e01e3a332672db299387a5f719e4b963ff4c22b46a3dc820a9c18dcd51ae9e6e108ae60db66b63e044fed6cc0810f6d2e3a002db10335174531819ac109cf859657942d99f370e184750dd9b50736c82b28918329c284b5789de642194b19dcb1dbdf51ed9640420ffdd6ad964c27963d12ab9664077c1ac8100000001acbc3e2d74c9948b74256f9b5fb29ddf531b75a59cb484e8d1810bba40907fc3d4fc71b6d57ba74d39f690e33468eb196ffe7c165107f63990068e027d18464a",
+          "groth16_proof_sha256": "4577b5d86fb423f9406ba3c469d25b608a79a9ab57db1c7000791953cef60f38",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "groth16_verify": 1.459208
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 16789700608,
+          "request_wall_ms": 1.565292
+        }
+      }
+    },
+    {
+      "sample": 3,
+      "wrap": {
+        "status": 200,
+        "wall_ms": 13624.850540999323,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x05b26a6d3ba1c3fd71557337c742c9875e50a5860508881c22a5ceb439b27102",
+            "0x0b9c3a6c789e7f9d916e18964930772435f4d6c695fe998ba5715d1a0fc78202",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x138b1a700be217a8469faf23254dbeab8ed8411a637a0ef6644f176b8c2f314b"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "inner_proof_sha256": "13316d5fe8a0ea6a2d676b822a98c6613e7ce7bfd0284a235b0000d40c8c1318",
+          "statement_sha256": "236bb4c7ee35004101a3c97bdeaa8be01ec322c013c78a1169053defd21cbd49",
+          "groth16_proof_hex": "0x8fc3e3300f069ba150fc74c3b222389a30c373f62b59451f013d926759dc4044ee323b911c94db71a76dcc47d58ada58cf9b9845a67ea9683fc424ab2a0d46b92b10e82170acbc17fedcc93b80886bbe08e0e8751b6264736ad3a2333552f3c78f02abcf12b6339e60087e2229eb5dc09846119623a86af433db6b73f37b37e900000001a247daebbeff1934aa5d634f596bf602ac38f7d5fe839f4dfc5c2d130e6be263a6980e86c6cd04655a9117ab3e75eac35e4d1776dcc8cd29a3d88a0c786b491f",
+          "groth16_proof_sha256": "83b9bd98aa7fd2bf41a6b00cb46f338e43eefc8dc9c7a2128c4a59ad1ec2c24d",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "constraint_solve_and_groth16_prove": 13622.53125,
+            "groth16_verify": 1.473333,
+            "parse_inner_proof": 0.141208,
+            "witness_encoding": 0.292583
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 18365661184,
+          "request_wall_ms": 13624.524709
+        }
+      },
+      "verify": {
+        "status": 200,
+        "wall_ms": 1.7978749983012676,
+        "result": {
+          "circuit": "demo_tribute",
+          "pipeline": "direct-ultrakeccakzk-bb5-to-gnark-groth16",
+          "verified": true,
+          "public_inputs": [
+            "0x05b26a6d3ba1c3fd71557337c742c9875e50a5860508881c22a5ceb439b27102",
+            "0x0b9c3a6c789e7f9d916e18964930772435f4d6c695fe998ba5715d1a0fc78202",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x138b1a700be217a8469faf23254dbeab8ed8411a637a0ef6644f176b8c2f314b"
+          ],
+          "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+          "statement_sha256": "236bb4c7ee35004101a3c97bdeaa8be01ec322c013c78a1169053defd21cbd49",
+          "groth16_proof_hex": "0x8fc3e3300f069ba150fc74c3b222389a30c373f62b59451f013d926759dc4044ee323b911c94db71a76dcc47d58ada58cf9b9845a67ea9683fc424ab2a0d46b92b10e82170acbc17fedcc93b80886bbe08e0e8751b6264736ad3a2333552f3c78f02abcf12b6339e60087e2229eb5dc09846119623a86af433db6b73f37b37e900000001a247daebbeff1934aa5d634f596bf602ac38f7d5fe839f4dfc5c2d130e6be263a6980e86c6cd04655a9117ab3e75eac35e4d1776dcc8cd29a3d88a0c786b491f",
+          "groth16_proof_sha256": "83b9bd98aa7fd2bf41a6b00cb46f338e43eefc8dc9c7a2128c4a59ad1ec2c24d",
+          "groth16_proof_bytes": 196,
+          "groth16_encoding": "gnark-bn254-WriteTo-compressed-Ar-Bs-Krs-commitments-commitmentPok",
+          "groth16_commitments": 1,
+          "timings_ms": {
+            "groth16_verify": 1.424959
+          },
+          "structural_counts": {
+            "constraints": 13740642,
+            "internal_variables": 16419365,
+            "secret_variables": 448,
+            "public_inputs": 4,
+            "groth16_commitment_extensions": 1
+          },
+          "setup_provenance": {
+            "circuit": "demo_tribute",
+            "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+            "inner_proof_system": "ultrahonk-keccak",
+            "noir_version": "1.0.0-beta.22",
+            "barretenberg_version": "5.0.0-nightly.20260522",
+            "disable_zk": false,
+            "ipa_accumulation": false,
+            "optimizedSolidityVerifier": false,
+            "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+            "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+            "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+            "outer_curve": "bn254",
+            "setup_kind": "single-party-experimental-not-production",
+            "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+            "created_utc": "2026-10-19T16:38:54.646696Z",
+            "go_version": "go1.27.2",
+            "structural_counts": {
+              "constraints": 13740642,
+              "internal_variables": 16419365,
+              "secret_variables": 448,
+              "public_inputs": 4,
+              "groth16_commitment_extensions": 1
+            },
+            "artifact_sha256": {
+              "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+              "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+              "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+            },
+            "setup_timings_ms": {
+              "constraint_compile": 28011.148958,
+              "groth16_setup": 426739.337417
+            }
+          },
+          "initialization": {
+            "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+            "started_at": "2026-10-19T18:19:02.518512Z",
+            "finished_at": "2026-10-19T18:20:21.56827Z",
+            "prover_loaded": true,
+            "timings_ms": {
+              "load_setup_provenance": 0.273,
+              "load_verifying_key": 0.865959,
+              "load_proving_artifacts": 79048.33325
+            },
+            "wall_ms": 79049.500459,
+            "process_lifetime_peak_rss_bytes": 9345449984
+          },
+          "process_lifetime_peak_rss_bytes": 18365661184,
+          "request_wall_ms": 1.543917
+        }
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "case": "changed_inner_root",
+      "status": 422,
+      "wall_ms": 148.75891599804163,
+      "result": {
+        "error": "constrained inner verification/proving: constraint #8233273 is not satisfied: 15862824797173647916970106304962283118085982345912155830341478128416928065007 ⋅ 1 != 5934601048035357247530097522621007304632522679065371319871959894147651437014",
+        "verified": false
+      }
+    }
+  ],
+  "metadata_after": {
+    "available": true,
+    "backend": "native-go-gnark",
+    "cancellation_policy": "client cancellation stops waiting; active native computation finishes before the server accepts another request",
+    "circuit": "demo_tribute",
+    "initialization": {
+      "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+      "started_at": "2026-10-19T18:19:02.518512Z",
+      "finished_at": "2026-10-19T18:20:21.56827Z",
+      "prover_loaded": true,
+      "timings_ms": {
+        "load_setup_provenance": 0.273,
+        "load_verifying_key": 0.865959,
+        "load_proving_artifacts": 79048.33325
+      },
+      "wall_ms": 79049.500459,
+      "process_lifetime_peak_rss_bytes": 9345449984
+    },
+    "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+    "process_policy": "resident artifacts initialized once at server startup; one native request at a time",
+    "setup_provenance": {
+      "circuit": "demo_tribute",
+      "inner_vk_sha256": "6b5d5609be0894c5f8379803ab6421bf66b0f1c25c5667644772f2d2bf7225bc",
+      "inner_proof_system": "ultrahonk-keccak",
+      "noir_version": "1.0.0-beta.22",
+      "barretenberg_version": "5.0.0-nightly.20260522",
+      "disable_zk": false,
+      "ipa_accumulation": false,
+      "optimizedSolidityVerifier": false,
+      "reference_solidity_sha256": "c80d9f2673861398d778493895b34c0a868b9649fc99bb8aed3abb968c66d8be",
+      "constraint_sources_sha256": "4fafeb3e2b28753d66c6b37a646d3f7bd54f27e67889bce0bcd2e07863cd7ad1",
+      "gnark_revision": "f9bda493064413cbc6a187f8c9617046915bb2e4",
+      "outer_curve": "bn254",
+      "setup_kind": "single-party-experimental-not-production",
+      "randomness": "gnark/gnark-crypto crypto/rand (OS CSPRNG); toxic waste not retained",
+      "created_utc": "2026-10-19T16:38:54.646696Z",
+      "go_version": "go1.27.2",
+      "structural_counts": {
+        "constraints": 13740642,
+        "internal_variables": 16419365,
+        "secret_variables": 448,
+        "public_inputs": 4,
+        "groth16_commitment_extensions": 1
+      },
+      "artifact_sha256": {
+        "circuit.r1cs": "8a0f59e3ccab996ef06f133278a64c18f9ce0ffb0e8be03b3069cf639a8cfa71",
+        "proving.key": "4045343413f49f1a8c84f91c01204eb11290efe995023b946ff8be79b866a47f",
+        "verifying.key": "66e32fa9c5e1e034a92925a817390fb53260028c00e4163b5b72cefdc457b3e3"
+      },
+      "setup_timings_ms": {
+        "constraint_compile": 28011.148958,
+        "groth16_setup": 426739.337417
+      }
+    }
+  }
+}

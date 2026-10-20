@@ -1,0 +1,127 @@
+{
+  "environment": {
+    "browser": {
+      "captured_at": "2026-10-19T18:23:58.166Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "platform": "MacIntel",
+      "user_agent_data": null,
+      "hardware_concurrency_reported": 18,
+      "device_memory_gib_reported": null,
+      "languages": [
+        "en-US"
+      ],
+      "screen": {
+        "width": 390,
+        "height": 844,
+        "device_pixel_ratio": 1
+      },
+      "secure_context": false,
+      "artifact_hash": "SHA-256 in the same Rust/WASM module; no SubtleCrypto dependency",
+      "requested_execution_threads": 1,
+      "thread_policy": "One execution thread per browser Worker. Noir selects the compatible BB WASM artifact from cross-origin isolation / SharedArrayBuffer availability; execution remains single-threaded.",
+      "memory_policy": "Observed WASM linear-memory capacities only. Noir totals sum Rust fixture, ACVM, ABI and BB module capacities; component snapshots identify the measured modules. Excludes JS buffers, runtime RSS, physical RAM and peak memory.",
+      "timezone": "Europe/Kiev",
+      "visibility_at_start": "visible"
+    },
+    "physical_phone": false,
+    "backend": {
+      "os": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M5 Pro",
+      "logical_cpus": 18,
+      "memory_bytes": 51539607552,
+      "go": "go1.27.2",
+      "GOMAXPROCS": 12,
+      "GOMEMLIMIT": "16GiB"
+    }
+  },
+  "initialization": {
+    "id": "3ec5c965d0e0d812418a6522dae5c6a0",
+    "started_at": "2026-10-19T18:19:02.518512Z",
+    "finished_at": "2026-10-19T18:20:21.56827Z",
+    "prover_loaded": true,
+    "timings_ms": {
+      "load_setup_provenance": 0.273,
+      "load_verifying_key": 0.865959,
+      "load_proving_artifacts": 79048.33325
+    },
+    "wall_ms": 79049.500459,
+    "process_lifetime_peak_rss_bytes": 9345449984
+  },
+  "checks": {
+    "startup_export_before_proofs": true,
+    "startup_deduplicated_across_three_proofs": true,
+    "key_path_unavailable_for_three_real_proofs": true,
+    "cancellation_preserves_busy_slot": true,
+    "metadata_works_during_native_proof": true,
+    "same_session_recovered_after_cancel": true,
+    "local_prepared_groth16_unchanged": true,
+    "outer_rejections": [
+      {
+        "public_index": 0,
+        "status": 422,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "public_index": 1,
+        "status": 422,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "public_index": 2,
+        "status": 422,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      },
+      {
+        "public_index": 3,
+        "status": 422,
+        "error": "outer Groth16 verification: pairing doesn't match"
+      }
+    ],
+    "malformed_outer_rejected": true,
+    "mismatched_instance_rejected": "Backend перезапущен: initialization ID изменился. Запрос не принят как наблюдение прежней сессии. Повторно включите backend wrapping и запустите новую серию; автоматического повтора нет."
+  },
+  "evidence": {
+    "native_returned_verified_proofs": 3,
+    "browser_returned_verified_wrapper_proofs": 3,
+    "configured_key_path_removed_for_native_proofs": true,
+    "original_artifacts_untouched": true,
+    "key_alias_restored_after_checks": true,
+    "invalid_inner_public_rejected": {
+      "case": "changed_inner_root",
+      "status": 422,
+      "wall_ms": 148.75891599804163,
+      "result": {
+        "error": "constrained inner verification/proving: constraint #8233273 is not satisfied: 15862824797173647916970106304962283118085982345912155830341478128416928065007 ⋅ 1 != 5934601048035357247530097522621007304632522679065371319871959894147651437014",
+        "verified": false
+      }
+    },
+    "startup_metadata_unchanged": true,
+    "browser_initialization_records": 1,
+    "startup_only_csv_rows": 6,
+    "full_browser_csv_rows": 236,
+    "startup_load_rows": 1,
+    "request_load_rows": 0,
+    "stored_request_results_reference_initialization_instead_of_copying_it": true,
+    "client_cold_mode_does_not_reload_backend": true
+  },
+  "tests": {
+    "command": "GOMEMLIMIT=16GiB GOMAXPROCS=12 ULTRAHONK_WRAP_KEYS=... ULTRAHONK_WRAP_RESULT=... go test ./... -count=1",
+    "passed": true,
+    "package_seconds": 10.401,
+    "full_bb5_constraint_checks": true,
+    "real_outer_proof_binding_checks": true,
+    "lifecycle_checks_use_small_real_groth16_fixture": true,
+    "cryptographic_circuit_sources_unchanged": true
+  },
+  "measurement_policy": {
+    "startup_is_once_per_server_instance": true,
+    "request_wall_excludes_startup": true,
+    "memory_is_process_lifetime_high_water_mark_not_per_request_peak": true,
+    "client_wasm_capacity_is_separate": true,
+    "server_keys_remain_in_memory_until_shutdown": true,
+    "cancel_does_not_interrupt_already_started_gnark_work": true
+  },
+  "fault_injection": "Changed initialization ID in an intercepted HTTP response to test client attribution; no actual server restart was performed.",
+  "page_errors": []
+}

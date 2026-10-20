@@ -1,0 +1,40 @@
+{
+  "browser": "151.0.7922.34",
+  "physical_phone": false,
+  "environment": "Desktop Chromium, mobile layout; these are not phone performance measurements",
+  "url_origin": "LAN HTTP, secure_context=false, SubtleCrypto unavailable; SHA-256 and real proofs run in WASM",
+  "positive_check_wasm_capacity_limit_bytes": 536870912,
+  "verified_proofs": 18,
+  "engine_signature_mode_combinations": 8,
+  "capacity_one_samples_per_combination": 2,
+  "multistep_nova_capacity": 2,
+  "cancellation": "One completed proof preserved; worker cancellation recovered with a successful subsequent Groth16 run",
+  "export_json_and_csv": true,
+  "layout_checks": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "overflow": false
+    }
+  ],
+  "errors_checked": {
+    "sha256_mismatch": "assets/keys/groth16/poseidon2/n1/pk.bin: SHA-256 не совпадает с manifest. Скачивание или комплект файлов повреждены.",
+    "missing_asset": "assets/keys/nova/poseidon2/params.bin: HTTP 404"
+  },
+  "phone_memory_limit": "unmeasured; browser linear-memory capacity is not RSS"
+}
